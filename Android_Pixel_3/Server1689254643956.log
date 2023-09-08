@@ -1,0 +1,322 @@
+2023-07-13 13:24:12:195 [Appium] Welcome to Appium v1.22.3
+2023-07-13 13:24:12:198 [Appium] Non-default server args:
+2023-07-13 13:24:12:200 [Appium]   port: 11407
+2023-07-13 13:24:12:201 [Appium]   sessionOverride: true
+2023-07-13 13:24:12:202 [Appium]   logFile: C:\Users\Rekha\eclipse-workspace\Torum-mobile-automation-master\Android_Pixel_3\Server1689254643956.log
+2023-07-13 13:24:12:275 [Appium] Appium REST http interface listener started on 0.0.0.0:11407
+2023-07-13 13:24:12:396 [HTTP] --> GET /wd/hub/status
+2023-07-13 13:24:12:396 [HTTP] {}
+2023-07-13 13:24:12:400 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2023-07-13 13:24:12:404 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.3"}}
+2023-07-13 13:24:12:417 [HTTP] <-- GET /wd/hub/status 200 17 ms - 68
+2023-07-13 13:24:12:418 [HTTP] 
+2023-07-13 13:24:12:428 [HTTP] --> GET /wd/hub/status
+2023-07-13 13:24:12:429 [HTTP] {}
+2023-07-13 13:24:12:430 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2023-07-13 13:24:12:431 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.3"}}
+2023-07-13 13:24:12:434 [HTTP] <-- GET /wd/hub/status 200 4 ms - 68
+2023-07-13 13:24:12:435 [HTTP] 
+2023-07-13 13:24:12:452 [HTTP] Request idempotency key: acb2fcf1-93a3-4944-a443-4d14eb0ea7d4
+2023-07-13 13:24:12:482 [HTTP] --> POST /wd/hub/session
+2023-07-13 13:24:12:483 [HTTP] {"desiredCapabilities":{"appActivity":"com.torum.app.MainActivity","appPackage":"com.torum.app.dev","automationName":"UiAutomator2","chromeDriverPort":"11000","platformName":"Android","udid":"emulator-5554","deviceName":"Pixel_3","systemPort":"10000"},"capabilities":{"firstMatch":[{"appium:appActivity":"com.torum.app.MainActivity","appium:appPackage":"com.torum.app.dev","appium:automationName":"UiAutomator2","chromeDriverPort":"11000","appium:deviceName":"Pixel_3","platformName":"android","appium:systemPort":"10000","appium:udid":"emulator-5554"}]}}
+2023-07-13 13:24:12:484 [W3C] Calling AppiumDriver.createSession() with args: [{"appActivity":"com.torum.app.MainActivity","appPackage":"com.torum.app.dev","automationName":"UiAutomator2","chromeDriverPort":"11000","platformName":"Android","udid":"emulator-5554","deviceName":"Pixel_3","systemPort":"10000"},null,{"firstMatch":[{"appium:appActivity":"com.torum.app.MainActivity","appium:appPackage":"com.torum.app.dev","appium:automationName":"UiAutomator2","chromeDriverPort":"11000","appium:deviceName":"Pixel_3","platformName":"android","appium:systemPort":"10000","appium:udid":"emulator-5554"}]}]
+2023-07-13 13:24:12:486 [BaseDriver] Event 'newSessionRequested' logged at 1689254652485 (18:54:12 GMT+0530 (India Standard Time))
+2023-07-13 13:24:12:493 [BaseDriver] The following capabilities are not standard capabilities and should have an extension prefix:
+2023-07-13 13:24:12:493 [BaseDriver]   chromeDriverPort
+2023-07-13 13:24:13:183 [Appium] Appium v1.22.3 creating new AndroidUiautomator2Driver (v1.70.1) session
+2023-07-13 13:24:13:184 [Appium] There are no active sessions for cleanup
+2023-07-13 13:24:13:193 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2023-07-13 13:24:13:194 [BaseDriver] Creating session with W3C capabilities: {
+2023-07-13 13:24:13:194 [BaseDriver]   "alwaysMatch": {
+2023-07-13 13:24:13:194 [BaseDriver]     "appium:chromeDriverPort": "11000",
+2023-07-13 13:24:13:195 [BaseDriver]     "platformName": "android",
+2023-07-13 13:24:13:195 [BaseDriver]     "appium:appActivity": "com.torum.app.MainActivity",
+2023-07-13 13:24:13:196 [BaseDriver]     "appium:appPackage": "com.torum.app.dev",
+2023-07-13 13:24:13:196 [BaseDriver]     "appium:automationName": "UiAutomator2",
+2023-07-13 13:24:13:197 [BaseDriver]     "appium:deviceName": "Pixel_3",
+2023-07-13 13:24:13:197 [BaseDriver]     "appium:systemPort": "10000",
+2023-07-13 13:24:13:198 [BaseDriver]     "appium:udid": "emulator-5554"
+2023-07-13 13:24:13:199 [BaseDriver]   },
+2023-07-13 13:24:13:200 [BaseDriver]   "firstMatch": [
+2023-07-13 13:24:13:201 [BaseDriver]     {}
+2023-07-13 13:24:13:202 [BaseDriver]   ]
+2023-07-13 13:24:13:202 [BaseDriver] }
+2023-07-13 13:24:13:206 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2023-07-13 13:24:13:207 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2023-07-13 13:24:13:215 [BaseDriver] Capability 'systemPort' changed from string ('10000') to integer (10000). This may cause unexpected behavior
+2023-07-13 13:24:13:216 [BaseDriver] Capability 'chromeDriverPort' changed from string ('11000') to integer (11000). This may cause unexpected behavior
+2023-07-13 13:24:13:224 [BaseDriver] Session created with session id: e7b0454a-ac08-4ba6-85a4-1070496dea56
+2023-07-13 13:24:13:226 [UiAutomator2] Starting 'com.torum.app.dev' directly on the device
+2023-07-13 13:24:13:296 [ADB] Found 2 'build-tools' folders under 'C:\Users\Rekha\AppData\Local\Android\Sdk' (newest first):
+2023-07-13 13:24:13:297 [ADB]     C:/Users/Rekha/AppData/Local/Android/Sdk/build-tools/34.0.0
+2023-07-13 13:24:13:297 [ADB]     C:/Users/Rekha/AppData/Local/Android/Sdk/build-tools/30.0.3
+2023-07-13 13:24:13:299 [ADB] Using 'adb.exe' from 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2023-07-13 13:24:13:306 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2023-07-13 13:24:13:396 [AndroidDriver] Retrieving device list
+2023-07-13 13:24:13:397 [ADB] Trying to find a connected android device
+2023-07-13 13:24:13:398 [ADB] Getting connected devices
+2023-07-13 13:24:13:480 [ADB] Connected devices: [{"udid":"ZD2226MYVB","state":"device"},{"udid":"emulator-5554","state":"device"}]
+2023-07-13 13:24:13:481 [AndroidDriver] Using device: emulator-5554
+2023-07-13 13:24:13:487 [ADB] Using 'adb.exe' from 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2023-07-13 13:24:13:488 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2023-07-13 13:24:13:554 [ADB] Setting device id to emulator-5554
+2023-07-13 13:24:13:556 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2023-07-13 13:24:13:707 [ADB] Current device property 'ro.build.version.sdk': 34
+2023-07-13 13:24:13:708 [ADB] Getting device platform version
+2023-07-13 13:24:13:708 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2023-07-13 13:24:13:826 [ADB] Current device property 'ro.build.version.release': 14
+2023-07-13 13:24:13:827 [ADB] Device API level: 34
+2023-07-13 13:24:13:828 [UiAutomator2] Relaxing hidden api policy
+2023-07-13 13:24:13:829 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2023-07-13 13:24:14:184 [AndroidDriver] No app sent in, not parsing package/activity
+2023-07-13 13:24:14:185 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 wait-for-device'
+2023-07-13 13:24:14:267 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell echo ping'
+2023-07-13 13:24:14:373 [AndroidDriver] Pushing settings apk to device...
+2023-07-13 13:24:14:375 [ADB] Getting install status for io.appium.settings
+2023-07-13 13:24:14:376 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2023-07-13 13:24:15:095 [ADB] 'io.appium.settings' is installed
+2023-07-13 13:24:15:096 [ADB] Getting package info for 'io.appium.settings'
+2023-07-13 13:24:15:097 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2023-07-13 13:24:15:410 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('3.4.0' >= '3.4.0')
+2023-07-13 13:24:15:411 [ADB] There is no need to install/upgrade 'C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+2023-07-13 13:24:15:412 [ADB] Getting IDs of all 'io.appium.settings' processes
+2023-07-13 13:24:15:413 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell 'pgrep --help; echo $?''
+2023-07-13 13:24:15:674 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+2023-07-13 13:24:15:943 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2023-07-13 13:24:15:946 [Logcat] Starting logs capture with command: C:\\Users\\Rekha\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 logcat -v threadtime
+2023-07-13 13:24:16:150 [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to local port 10000
+2023-07-13 13:24:16:158 [ADB] Forwarding system: 10000 to device: 6790
+2023-07-13 13:24:16:159 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 forward tcp:10000 tcp:6790'
+2023-07-13 13:24:16:250 [ADB] Getting install status for io.appium.uiautomator2.server
+2023-07-13 13:24:16:251 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2023-07-13 13:24:16:567 [ADB] 'io.appium.uiautomator2.server' is installed
+2023-07-13 13:24:16:567 [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2023-07-13 13:24:16:568 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2023-07-13 13:24:19:556 [ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('4.27.0' >= '4.27.0')
+2023-07-13 13:24:19:557 [UiAutomator2] io.appium.uiautomator2.server installation state: sameVersionInstalled
+2023-07-13 13:24:19:558 [ADB] Checking app cert for C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.27.0.apk
+2023-07-13 13:24:19:750 [ADB] Using 'apksigner.jar' from 'C:\Users\Rekha\AppData\Local\Android\Sdk\build-tools\34.0.0\lib\apksigner.jar'
+2023-07-13 13:24:19:754 [ADB] Starting apksigner: 'C:\\Program Files\\Java\\jdk-20\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\Rekha\\AppData\\Local\\Android\\Sdk\\build-tools\\34.0.0\\lib\\apksigner.jar verify --print-certs C:\\Users\\Rekha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v4.27.0.apk
+2023-07-13 13:24:23:408 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2023-07-13 13:24:23:409 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2023-07-13 13:24:23:409 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2023-07-13 13:24:23:409 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2023-07-13 13:24:23:409 [ADB] 
+2023-07-13 13:24:23:411 [ADB] sha256 hash did match for 'appium-uiautomator2-server-v4.27.0.apk'
+2023-07-13 13:24:23:411 [ADB] 'C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.27.0.apk' is signed with the default certificate
+2023-07-13 13:24:23:411 [ADB] Getting install status for io.appium.uiautomator2.server.test
+2023-07-13 13:24:23:412 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server.test'
+2023-07-13 13:24:23:627 [ADB] 'io.appium.uiautomator2.server.test' is installed
+2023-07-13 13:24:23:627 [ADB] Checking app cert for C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk
+2023-07-13 13:24:23:635 [ADB] Starting apksigner: 'C:\\Program Files\\Java\\jdk-20\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\Rekha\\AppData\\Local\\Android\\Sdk\\build-tools\\34.0.0\\lib\\apksigner.jar verify --print-certs C:\\Users\\Rekha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk
+2023-07-13 13:24:24:953 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2023-07-13 13:24:24:954 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2023-07-13 13:24:24:954 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2023-07-13 13:24:24:954 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2023-07-13 13:24:24:954 [ADB] 
+2023-07-13 13:24:24:954 [ADB] sha256 hash did match for 'appium-uiautomator2-server-debug-androidTest.apk'
+2023-07-13 13:24:24:955 [ADB] 'C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+2023-07-13 13:24:24:955 [UiAutomator2] Server packages are not going to be (re)installed
+2023-07-13 13:24:24:961 [UiAutomator2] Waiting up to 30000ms for services to be available
+2023-07-13 13:24:24:962 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm list instrumentation'
+2023-07-13 13:24:25:176 [UiAutomator2] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2023-07-13 13:24:25:182 [ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2023-07-13 13:24:25:183 [ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+2023-07-13 13:24:25:184 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+2023-07-13 13:24:25:516 [UiAutomator2] No app capability. Assuming it is already on the device
+2023-07-13 13:24:25:517 [ADB] Getting install status for com.torum.app.dev
+2023-07-13 13:24:25:517 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package com.torum.app.dev'
+2023-07-13 13:24:25:729 [ADB] 'com.torum.app.dev' is installed
+2023-07-13 13:24:25:731 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop com.torum.app.dev'
+2023-07-13 13:24:25:979 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm clear com.torum.app.dev'
+2023-07-13 13:24:26:697 [AndroidDriver] Performed fast reset on the installed 'com.torum.app.dev' application (stop and clear)
+2023-07-13 13:24:26:698 [UiAutomator2] Performing shallow cleanup of automation leftovers
+2023-07-13 13:24:26:736 [UiAutomator2] No obsolete sessions have been detected (socket hang up)
+2023-07-13 13:24:26:736 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server.test'
+2023-07-13 13:24:27:026 [UiAutomator2] Starting UIAutomator2 server 4.27.0
+2023-07-13 13:24:27:026 [UiAutomator2] Using UIAutomator2 server from 'C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.27.0.apk' and test from 'C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+2023-07-13 13:24:27:027 [UiAutomator2] Waiting up to 30000ms for UiAutomator2 to be online...
+2023-07-13 13:24:27:028 [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","emulator-5554","shell","am","instrument","-w","-e","disableAnalytics",true,"io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+2023-07-13 13:24:27:044 [WD Proxy] Matched '/status' to command name 'getStatus'
+2023-07-13 13:24:27:046 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:10000/wd/hub/status] with no body
+2023-07-13 13:24:27:061 [WD Proxy] socket hang up
+2023-07-13 13:24:28:062 [WD Proxy] Matched '/status' to command name 'getStatus'
+2023-07-13 13:24:28:063 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:10000/wd/hub/status] with no body
+2023-07-13 13:24:28:079 [WD Proxy] socket hang up
+2023-07-13 13:24:29:089 [WD Proxy] Matched '/status' to command name 'getStatus'
+2023-07-13 13:24:29:090 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:10000/wd/hub/status] with no body
+2023-07-13 13:24:29:155 [WD Proxy] socket hang up
+2023-07-13 13:24:30:161 [WD Proxy] Matched '/status' to command name 'getStatus'
+2023-07-13 13:24:30:162 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:10000/wd/hub/status] with no body
+2023-07-13 13:24:30:180 [WD Proxy] socket hang up
+2023-07-13 13:24:31:188 [WD Proxy] Matched '/status' to command name 'getStatus'
+2023-07-13 13:24:31:189 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:10000/wd/hub/status] with no body
+2023-07-13 13:24:31:226 [WD Proxy] socket hang up
+2023-07-13 13:24:31:237 [Instrumentation] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+2023-07-13 13:24:32:227 [WD Proxy] Matched '/status' to command name 'getStatus'
+2023-07-13 13:24:32:228 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:10000/wd/hub/status] with no body
+2023-07-13 13:24:32:255 [WD Proxy] socket hang up
+2023-07-13 13:24:33:270 [WD Proxy] Matched '/status' to command name 'getStatus'
+2023-07-13 13:24:33:270 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:10000/wd/hub/status] with no body
+2023-07-13 13:24:33:284 [WD Proxy] socket hang up
+2023-07-13 13:24:34:286 [WD Proxy] Matched '/status' to command name 'getStatus'
+2023-07-13 13:24:34:287 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:10000/wd/hub/status] with no body
+2023-07-13 13:24:34:884 [WD Proxy] Got response with status 200: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+2023-07-13 13:24:34:885 [UiAutomator2] The initialization of the instrumentation process took 7859ms
+2023-07-13 13:24:34:886 [WD Proxy] Matched '/session' to command name 'createSession'
+2023-07-13 13:24:34:887 [WD Proxy] Proxying [POST /session] to [POST http://127.0.0.1:10000/wd/hub/session] with body: {"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","chromeDriverPort":11000,"appActivity":"com.torum.app.MainActivity","appPackage":"com.torum.app.dev","automationName":"UiAutomator2","deviceName":"Pixel_3","systemPort":10000,"udid":"emulator-5554"},"platformName":"android","chromeDriverPort":11000,"appActivity":"com.torum.app.MainActivity","appPackage":"com.torum.app.dev","automationName":"UiAutomator2","deviceName":"emulator-5554","systemPort":10000,"udid":"emulator-5554","deviceUDID":"emulator-5554"}],"alwaysMatch":{}}}
+2023-07-13 13:24:35:148 [WD Proxy] Got response with status 200: {"sessionId":"0c38f37b-d539-4348-94ca-8ef9fb2a3931","value":{"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","chromeDriverPort":11000,"appActivity":"com.torum.app.MainActivity","appPackage":"com.torum.app.dev","automationName":"UiAutomator2","deviceName":"Pixel_3","systemPort":10000,"udid":"emulator-5554"},"platformName":"android","chromeDriverPort":11000,"appActivity":"com.torum.app.MainActivity","appPackage":"com.torum.app.dev","automationName":"UiAutomator2","deviceName":"emulator-5554","systemPort":10000,"udid":"emulator-5554","deviceUDID":"emulator-5554"}],"alwaysMatch":{}},"sessionId":"0c38f37b-d539-4348-94ca-8ef9fb2a3931"}}
+2023-07-13 13:24:35:149 [WD Proxy] Determined the downstream protocol as 'W3C'
+2023-07-13 13:24:35:189 [WD Proxy] Proxying [GET /appium/device/info] to [GET http://127.0.0.1:10000/wd/hub/session/0c38f37b-d539-4348-94ca-8ef9fb2a3931/appium/device/info] with no body
+2023-07-13 13:24:35:356 [WD Proxy] Got response with status 200: {"sessionId":"0c38f37b-d539-4348-94ca-8ef9fb2a3931","value":{"androidId":"c26ebd1f964d0b34","apiVersion":"34","bluetooth":{"state":"OFF"},"brand":"google","carrierName":"T-Mobile","displayDensity":440,"locale":"en_US","manufacturer":"Google","model":"sdk_gphone64_x86_64","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":30000,"linkUpstreamBandwidthKbps":12000,"networkCapabilities":"NET_CAPABILITY_NOT_METERED,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_FOREGROUND,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-50,"transportTypes":"TRANSPORT_WIFI"},"detailedState":"CONNECTED","extraInfo":"","isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":-1,"subtypeName":"","type":1,"typeName":"WIFI"},{"capabilities":{"SSID":null,"linkDownBandwidthKbps":4300,"linkUpstreamBandwidthKbps":1800,"networkCapabi...
+2023-07-13 13:24:35:357 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys window'
+2023-07-13 13:24:35:641 [AndroidDriver] Screen already unlocked, doing nothing
+2023-07-13 13:24:35:641 [UiAutomator2] Starting 'com.torum.app.dev/com.torum.app.MainActivity and waiting for 'com.torum.app.dev/com.torum.app.MainActivity'
+2023-07-13 13:24:35:643 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am start -W -n com.torum.app.dev/com.torum.app.MainActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2023-07-13 13:24:39:197 [WD Proxy] Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:10000/wd/hub/session/0c38f37b-d539-4348-94ca-8ef9fb2a3931/appium/device/pixel_ratio] with no body
+2023-07-13 13:24:39:265 [WD Proxy] Got response with status 200: {"sessionId":"0c38f37b-d539-4348-94ca-8ef9fb2a3931","value":2.75}
+2023-07-13 13:24:39:269 [WD Proxy] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+2023-07-13 13:24:39:270 [WD Proxy] Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:10000/wd/hub/session/0c38f37b-d539-4348-94ca-8ef9fb2a3931/appium/device/system_bars] with no body
+2023-07-13 13:24:39:450 [WD Proxy] Got response with status 200: {"sessionId":"0c38f37b-d539-4348-94ca-8ef9fb2a3931","value":{"statusBar":66}}
+2023-07-13 13:24:39:451 [WD Proxy] Matched '/window/current/size' to command name 'getWindowSize'
+2023-07-13 13:24:39:452 [WD Proxy] Proxying [GET /window/current/size] to [GET http://127.0.0.1:10000/wd/hub/session/0c38f37b-d539-4348-94ca-8ef9fb2a3931/window/current/size] with no body
+2023-07-13 13:24:39:597 [WD Proxy] Got response with status 200: {"sessionId":"0c38f37b-d539-4348-94ca-8ef9fb2a3931","value":{"height":2154,"width":1080}}
+2023-07-13 13:24:39:599 [Appium] New AndroidUiautomator2Driver session created successfully, session e7b0454a-ac08-4ba6-85a4-1070496dea56 added to master session list
+2023-07-13 13:24:39:601 [BaseDriver] Event 'newSessionStarted' logged at 1689254679601 (18:54:39 GMT+0530 (India Standard Time))
+2023-07-13 13:24:39:603 [W3C (e7b0454a)] Cached the protocol value 'W3C' for the new session e7b0454a-ac08-4ba6-85a4-1070496dea56
+2023-07-13 13:24:39:605 [W3C (e7b0454a)] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","chromeDriverPort":11000,"appActivity":"com.torum.app.MainActivity","appPackage":"com.torum.app.dev","automationName":"UiAutomator2","deviceName":"Pixel_3","systemPort":10000,"udid":"emulator-5554"},"platformName":"android","chromeDriverPort":11000,"appActivity":"com.torum.app.MainActivity","appPackage":"com.torum.app.dev","automationName":"UiAutomator2","deviceName":"emulator-5554","systemPort":10000,"udid":"emulator-5554","deviceUDID":"emulator-5554","deviceApiLevel":34,"platformVersion":"14","deviceScreenSize":"1080x2220","deviceScreenDensity":440,"deviceModel":"sdk_gphone64_x86_64","deviceManufacturer":"Google","pixelRatio":2.75,"statBarHeight":66,"viewportRect":{"left":0,"top":66,"width":1080,"height":2088}}}
+2023-07-13 13:24:39:614 [HTTP] <-- POST /wd/hub/session 200 27127 ms - 1031
+2023-07-13 13:24:39:615 [HTTP] 
+2023-07-13 13:24:39:638 [HTTP] --> POST /wd/hub/session/e7b0454a-ac08-4ba6-85a4-1070496dea56/element
+2023-07-13 13:24:39:638 [HTTP] {"using":"xpath","value":"//*[contains(@text,'Login here')]/.."}
+2023-07-13 13:24:39:651 [W3C (e7b0454a)] Calling AppiumDriver.findElement() with args: ["xpath","//*[contains(@text,'Login here')]/..","e7b0454a-ac08-4ba6-85a4-1070496dea56"]
+2023-07-13 13:24:39:654 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2023-07-13 13:24:39:655 [BaseDriver] Waiting up to 0 ms for condition
+2023-07-13 13:24:39:657 [WD Proxy] Matched '/element' to command name 'findElement'
+2023-07-13 13:24:39:658 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/0c38f37b-d539-4348-94ca-8ef9fb2a3931/element] with body: {"strategy":"xpath","selector":"//*[contains(@text,'Login here')]/..","context":"","multiple":false}
+2023-07-13 13:24:44:527 [WD Proxy] Got response with status 404: {"sessionId":"0c38f37b-d539-4348-94ca-8ef9fb2a3931","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:90)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:67)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+2023-07-13 13:24:44:528 [W3C] Matched W3C error code 'no such element' to NoSuchElementError
+2023-07-13 13:24:44:585 [W3C (e7b0454a)] Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+2023-07-13 13:24:44:586 [W3C (e7b0454a)]     at AndroidUiautomator2Driver.findElOrEls (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:75:11)
+2023-07-13 13:24:44:586 [W3C (e7b0454a)]     at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-07-13 13:24:44:586 [W3C (e7b0454a)]     at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:33:12)
+2023-07-13 13:24:44:586 [W3C (e7b0454a)]     at AndroidUiautomator2Driver.findElement (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:53:10)
+2023-07-13 13:24:44:589 [HTTP] <-- POST /wd/hub/session/e7b0454a-ac08-4ba6-85a4-1070496dea56/element 404 4950 ms - 880
+2023-07-13 13:24:44:589 [HTTP] 
+2023-07-13 13:24:45:098 [HTTP] --> POST /wd/hub/session/e7b0454a-ac08-4ba6-85a4-1070496dea56/element
+2023-07-13 13:24:45:099 [HTTP] {"using":"xpath","value":"//*[contains(@text,'Login here')]/.."}
+2023-07-13 13:24:45:109 [W3C (e7b0454a)] Calling AppiumDriver.findElement() with args: ["xpath","//*[contains(@text,'Login here')]/..","e7b0454a-ac08-4ba6-85a4-1070496dea56"]
+2023-07-13 13:24:45:110 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2023-07-13 13:24:45:110 [BaseDriver] Waiting up to 0 ms for condition
+2023-07-13 13:24:45:112 [WD Proxy] Matched '/element' to command name 'findElement'
+2023-07-13 13:24:45:114 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/0c38f37b-d539-4348-94ca-8ef9fb2a3931/element] with body: {"strategy":"xpath","selector":"//*[contains(@text,'Login here')]/..","context":"","multiple":false}
+2023-07-13 13:24:45:990 [WD Proxy] Got response with status 404: {"sessionId":"0c38f37b-d539-4348-94ca-8ef9fb2a3931","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:90)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:67)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+2023-07-13 13:24:45:991 [W3C] Matched W3C error code 'no such element' to NoSuchElementError
+2023-07-13 13:24:45:993 [W3C (e7b0454a)] Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+2023-07-13 13:24:45:993 [W3C (e7b0454a)]     at AndroidUiautomator2Driver.findElOrEls (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:75:11)
+2023-07-13 13:24:45:994 [W3C (e7b0454a)]     at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-07-13 13:24:45:994 [W3C (e7b0454a)]     at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:33:12)
+2023-07-13 13:24:45:994 [W3C (e7b0454a)]     at AndroidUiautomator2Driver.findElement (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:53:10)
+2023-07-13 13:24:45:997 [HTTP] <-- POST /wd/hub/session/e7b0454a-ac08-4ba6-85a4-1070496dea56/element 404 897 ms - 880
+2023-07-13 13:24:45:998 [HTTP] 
+2023-07-13 13:24:46:520 [HTTP] --> POST /wd/hub/session/e7b0454a-ac08-4ba6-85a4-1070496dea56/element
+2023-07-13 13:24:46:521 [HTTP] {"using":"xpath","value":"//*[contains(@text,'Login here')]/.."}
+2023-07-13 13:24:46:522 [W3C (e7b0454a)] Calling AppiumDriver.findElement() with args: ["xpath","//*[contains(@text,'Login here')]/..","e7b0454a-ac08-4ba6-85a4-1070496dea56"]
+2023-07-13 13:24:46:524 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2023-07-13 13:24:46:524 [BaseDriver] Waiting up to 0 ms for condition
+2023-07-13 13:24:46:525 [WD Proxy] Matched '/element' to command name 'findElement'
+2023-07-13 13:24:46:526 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/0c38f37b-d539-4348-94ca-8ef9fb2a3931/element] with body: {"strategy":"xpath","selector":"//*[contains(@text,'Login here')]/..","context":"","multiple":false}
+2023-07-13 13:24:47:144 [WD Proxy] Got response with status 404: {"sessionId":"0c38f37b-d539-4348-94ca-8ef9fb2a3931","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:90)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:67)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+2023-07-13 13:24:47:147 [W3C] Matched W3C error code 'no such element' to NoSuchElementError
+2023-07-13 13:24:47:150 [W3C (e7b0454a)] Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+2023-07-13 13:24:47:150 [W3C (e7b0454a)]     at AndroidUiautomator2Driver.findElOrEls (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:75:11)
+2023-07-13 13:24:47:150 [W3C (e7b0454a)]     at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-07-13 13:24:47:151 [W3C (e7b0454a)]     at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:33:12)
+2023-07-13 13:24:47:151 [W3C (e7b0454a)]     at AndroidUiautomator2Driver.findElement (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:53:10)
+2023-07-13 13:24:47:153 [HTTP] <-- POST /wd/hub/session/e7b0454a-ac08-4ba6-85a4-1070496dea56/element 404 632 ms - 880
+2023-07-13 13:24:47:153 [HTTP] 
+2023-07-13 13:24:47:674 [HTTP] --> POST /wd/hub/session/e7b0454a-ac08-4ba6-85a4-1070496dea56/element
+2023-07-13 13:24:47:675 [HTTP] {"using":"xpath","value":"//*[contains(@text,'Login here')]/.."}
+2023-07-13 13:24:47:676 [W3C (e7b0454a)] Calling AppiumDriver.findElement() with args: ["xpath","//*[contains(@text,'Login here')]/..","e7b0454a-ac08-4ba6-85a4-1070496dea56"]
+2023-07-13 13:24:47:677 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2023-07-13 13:24:47:677 [BaseDriver] Waiting up to 0 ms for condition
+2023-07-13 13:24:47:678 [WD Proxy] Matched '/element' to command name 'findElement'
+2023-07-13 13:24:47:679 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/0c38f37b-d539-4348-94ca-8ef9fb2a3931/element] with body: {"strategy":"xpath","selector":"//*[contains(@text,'Login here')]/..","context":"","multiple":false}
+2023-07-13 13:24:48:141 [WD Proxy] Got response with status 404: {"sessionId":"0c38f37b-d539-4348-94ca-8ef9fb2a3931","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:90)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:67)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+2023-07-13 13:24:48:142 [W3C] Matched W3C error code 'no such element' to NoSuchElementError
+2023-07-13 13:24:48:144 [W3C (e7b0454a)] Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+2023-07-13 13:24:48:144 [W3C (e7b0454a)]     at AndroidUiautomator2Driver.findElOrEls (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:75:11)
+2023-07-13 13:24:48:145 [W3C (e7b0454a)]     at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-07-13 13:24:48:145 [W3C (e7b0454a)]     at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:33:12)
+2023-07-13 13:24:48:145 [W3C (e7b0454a)]     at AndroidUiautomator2Driver.findElement (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:53:10)
+2023-07-13 13:24:48:147 [HTTP] <-- POST /wd/hub/session/e7b0454a-ac08-4ba6-85a4-1070496dea56/element 404 472 ms - 880
+2023-07-13 13:24:48:147 [HTTP] 
+2023-07-13 13:24:48:658 [HTTP] --> POST /wd/hub/session/e7b0454a-ac08-4ba6-85a4-1070496dea56/element
+2023-07-13 13:24:48:659 [HTTP] {"using":"xpath","value":"//*[contains(@text,'Login here')]/.."}
+2023-07-13 13:24:48:660 [W3C (e7b0454a)] Calling AppiumDriver.findElement() with args: ["xpath","//*[contains(@text,'Login here')]/..","e7b0454a-ac08-4ba6-85a4-1070496dea56"]
+2023-07-13 13:24:48:661 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2023-07-13 13:24:48:661 [BaseDriver] Waiting up to 0 ms for condition
+2023-07-13 13:24:48:662 [WD Proxy] Matched '/element' to command name 'findElement'
+2023-07-13 13:24:48:662 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/0c38f37b-d539-4348-94ca-8ef9fb2a3931/element] with body: {"strategy":"xpath","selector":"//*[contains(@text,'Login here')]/..","context":"","multiple":false}
+2023-07-13 13:24:48:941 [WD Proxy] Got response with status 404: {"sessionId":"0c38f37b-d539-4348-94ca-8ef9fb2a3931","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:90)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:67)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+2023-07-13 13:24:48:942 [W3C] Matched W3C error code 'no such element' to NoSuchElementError
+2023-07-13 13:24:48:945 [W3C (e7b0454a)] Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+2023-07-13 13:24:48:945 [W3C (e7b0454a)]     at AndroidUiautomator2Driver.findElOrEls (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:75:11)
+2023-07-13 13:24:48:945 [W3C (e7b0454a)]     at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-07-13 13:24:48:946 [W3C (e7b0454a)]     at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:33:12)
+2023-07-13 13:24:48:946 [W3C (e7b0454a)]     at AndroidUiautomator2Driver.findElement (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:53:10)
+2023-07-13 13:24:48:948 [HTTP] <-- POST /wd/hub/session/e7b0454a-ac08-4ba6-85a4-1070496dea56/element 404 289 ms - 880
+2023-07-13 13:24:48:948 [HTTP] 
+2023-07-13 13:24:49:466 [HTTP] --> POST /wd/hub/session/e7b0454a-ac08-4ba6-85a4-1070496dea56/element
+2023-07-13 13:24:49:466 [HTTP] {"using":"xpath","value":"//*[contains(@text,'Login here')]/.."}
+2023-07-13 13:24:49:468 [W3C (e7b0454a)] Calling AppiumDriver.findElement() with args: ["xpath","//*[contains(@text,'Login here')]/..","e7b0454a-ac08-4ba6-85a4-1070496dea56"]
+2023-07-13 13:24:49:469 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2023-07-13 13:24:49:469 [BaseDriver] Waiting up to 0 ms for condition
+2023-07-13 13:24:49:471 [WD Proxy] Matched '/element' to command name 'findElement'
+2023-07-13 13:24:49:471 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/0c38f37b-d539-4348-94ca-8ef9fb2a3931/element] with body: {"strategy":"xpath","selector":"//*[contains(@text,'Login here')]/..","context":"","multiple":false}
+2023-07-13 13:24:49:801 [WD Proxy] Got response with status 404: {"sessionId":"0c38f37b-d539-4348-94ca-8ef9fb2a3931","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:90)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:67)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+2023-07-13 13:24:49:802 [W3C] Matched W3C error code 'no such element' to NoSuchElementError
+2023-07-13 13:24:49:804 [W3C (e7b0454a)] Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+2023-07-13 13:24:49:805 [W3C (e7b0454a)]     at AndroidUiautomator2Driver.findElOrEls (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:75:11)
+2023-07-13 13:24:49:805 [W3C (e7b0454a)]     at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-07-13 13:24:49:805 [W3C (e7b0454a)]     at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:33:12)
+2023-07-13 13:24:49:806 [W3C (e7b0454a)]     at AndroidUiautomator2Driver.findElement (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:53:10)
+2023-07-13 13:24:49:808 [HTTP] <-- POST /wd/hub/session/e7b0454a-ac08-4ba6-85a4-1070496dea56/element 404 341 ms - 880
+2023-07-13 13:24:49:808 [HTTP] 
+2023-07-13 13:24:49:824 [HTTP] --> GET /wd/hub/session/e7b0454a-ac08-4ba6-85a4-1070496dea56/screenshot
+2023-07-13 13:24:49:824 [HTTP] {}
+2023-07-13 13:24:49:827 [W3C (e7b0454a)] Calling AppiumDriver.getScreenshot() with args: ["e7b0454a-ac08-4ba6-85a4-1070496dea56"]
+2023-07-13 13:24:49:829 [WD Proxy] Matched '/screenshot' to command name 'getScreenshot'
+2023-07-13 13:24:49:829 [WD Proxy] Proxying [GET /screenshot] to [GET http://127.0.0.1:10000/wd/hub/session/0c38f37b-d539-4348-94ca-8ef9fb2a3931/screenshot] with no body
+2023-07-13 13:24:51:429 [WD Proxy] Got response with status 200: {"sessionId":"0c38f37b-d539-4348-94ca-8ef9fb2a3931","value":"iVBORw0KGgoAAAANSUhEUgAABDgAAAisCAYAAACtR1KuAAAAAXNSR0IArs4c6QAAAARzQklUCAgI\nCHwIZIgAACAASURBVHic7N1/rJZ1/cfxd0czFYoiZY5l/DqLNUQDZ9ZqbLlmP3BJc1HNGKbT1TDX\nYqSW0zlnbUVmq02cP2ASY6c2Q7GyTQ0pKyQNwSAR+SFoJOyYgHAUOOf7h6MpcO77HA4eeH15PDb+\nOPfnc3+uzzn3+ON+3td13e/o6urqKgAAAIBgLUd6AwAAAAB9JXAAAAAA8QQOAAAAIJ7AAQAAAMQT\nOAAAAIB4AgcAAAAQT+AAAAAA4gkcAAAAQDyBAwAAAIgncAAAAADxBA4AAAAgnsABAAAAxBM4AAAA\ngHgCBwAAABBP4AAAAADiCRwAAABAPIEDAAAAiCdwAAAAAPEEDgAAACCewAEAAADEEzgAAACAeAIH\nAAAAEE/gAAAAAOIJHAAAAEA8gQMAAACIJ3AAAAAA8QQOAAAAIJ7AAQAAAMQTOAAAAIB4AgcAAAAQ\nT+AAAAAA4gkcAAAAQDyBAwAAAIgncAAAAADxBA4AAAAgnsABAAAAxBM4AAAAgHgCBwAAABBP4AAA\nAADiCRwAAABAPIEDAAAAiCdwAAAAAPEEDgAAACCewAEAAADEEzgAAACAeAIHAAAAEE/gAAAAAOIJ\nHAAAAEA8gQMAAACIJ3AAAAAA8QQOAAAAIJ7AAQAAAMQTOAAAAIB4AgcAAAAQT+AAAAAA4gkcAAAA\nQDyBAwAAAIgncAAAAADxBA4AAAAgnsABAAAAxBM4AAAAgHgCBwAAABBP4AAAAADiCRwAAABAPIED\nAAAAiCdwAAAAAPEEDgAAACCewAEAAADEEzgAAACAeAIHAAAAEE/gAAAAAOIJHAAAAEA8gQMAAACI\nJ3AAAAAA8QQOAAAAIJ7AAQAA...
+2023-07-13 13:24:51:431 [W3C (e7b0454a)] Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABDgAAAisCAYAAACtR1KuAAAAAXNSR0IArs4c6QAAAARzQklUCAgI\nCHwIZIgAACAASURBVHic7N1/rJZ1/cfxd0czFYoiZY5l/DqLNUQDZ9ZqbLlmP3BJc1HNGKbT1TDX\nYqSW0zlnbUVmq02cP2ASY6c2Q7GyTQ0pKyQNwSAR+SFoJOyYgHAUOOf7h6MpcO77HA4eeH15PDb+\nOPfnc3+uzzn3+ON+3td13e/o6urqKgAAAIBgLUd6AwAAAAB9JXAAAAAA8QQOAAAAIJ7AAQAAAMQT\nOAAAAIB4AgcAAAAQT+AAAAAA4gkcAAAAQDyBAwAAAIgncAAAAADxBA4AAAAgnsABAAAAxBM4AAAA\ngHgCBwAAABBP4AAAAADiCRwAAABAPIEDAAAAiCdwAAAAAPEEDgAAACCewAEAAADEEzgAAACAeAIH\nAAAAEE/gAAAAAOIJHAAAAEA8gQMAAACIJ3AAAAAA8QQOAAAAIJ7AAQAAAMQTOAAAAIB4AgcAAAAQ\nT+AAAAAA4gkcAAAAQDyBAwAAAIgncAAAAADxBA4AAAAgnsABAAAAxBM4AAAAgHgCBwAAABBP4AAA\nAADiCRwAAABAPIEDAAAAiCdwAAAAAPEEDgAAACCewAEAAADEEzgAAACAeAIHAAAAEE/gAAAAAOIJ\nHAAAAEA8gQMAAACIJ3AAAAAA8QQOAAAAIJ7AAQAAAMQTOAAAAIB4AgcAAAAQT+AAAAAA4gkcAAAA\nQDyBAwAAAIgncAAAAADxBA4AAAAgnsABAAAAxBM4AAAAgHgCBwAAABBP4AAAAADiCRwAAABAPIED\nAAAAiCdwAAAAAPEEDgAAACCewAEAAADEEzgAAACAeAIHAAAAEE/gAAAAAOIJHAAAAEA8gQMAAACI\nJ3AAAAAA8QQOAAAAIJ7AAQAAAMQTOAAAAIB4AgcAAAAQT+AAAAAA4gkcAAAAQDyBAwAAAIgncAAA\nAADxBA...
+2023-07-13 13:24:51:440 [HTTP] <-- GET /wd/hub/session/e7b0454a-ac08-4ba6-85a4-1070496dea56/screenshot 200 1614 ms - 97800
+2023-07-13 13:24:51:441 [HTTP] 
+2023-07-13 13:24:51:493 [HTTP] --> POST /wd/hub/session/e7b0454a-ac08-4ba6-85a4-1070496dea56/appium/app/close
+2023-07-13 13:24:51:493 [HTTP] {}
+2023-07-13 13:24:51:510 [W3C (e7b0454a)] Calling AppiumDriver.closeApp() with args: ["e7b0454a-ac08-4ba6-85a4-1070496dea56"]
+2023-07-13 13:24:51:511 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop com.torum.app.dev'
+2023-07-13 13:24:53:240 [W3C (e7b0454a)] Responding to client with driver.closeApp() result: null
+2023-07-13 13:24:53:242 [HTTP] <-- POST /wd/hub/session/e7b0454a-ac08-4ba6-85a4-1070496dea56/appium/app/close 200 1748 ms - 14
+2023-07-13 13:24:53:242 [HTTP] 
+2023-07-13 13:24:53:247 [HTTP] --> DELETE /wd/hub/session/e7b0454a-ac08-4ba6-85a4-1070496dea56
+2023-07-13 13:24:53:247 [HTTP] {}
+2023-07-13 13:24:53:248 [W3C (e7b0454a)] Calling AppiumDriver.deleteSession() with args: ["e7b0454a-ac08-4ba6-85a4-1070496dea56"]
+2023-07-13 13:24:53:248 [BaseDriver] Event 'quitSessionRequested' logged at 1689254693248 (18:54:53 GMT+0530 (India Standard Time))
+2023-07-13 13:24:53:249 [Appium] Removing session e7b0454a-ac08-4ba6-85a4-1070496dea56 from our master session list
+2023-07-13 13:24:53:252 [UiAutomator2] Deleting UiAutomator2 session
+2023-07-13 13:24:53:255 [UiAutomator2] Deleting UiAutomator2 server session
+2023-07-13 13:24:53:257 [WD Proxy] Matched '/' to command name 'deleteSession'
+2023-07-13 13:24:53:257 [WD Proxy] Proxying [DELETE /] to [DELETE http://127.0.0.1:10000/wd/hub/session/0c38f37b-d539-4348-94ca-8ef9fb2a3931] with no body
+2023-07-13 13:24:53:333 [WD Proxy] Got response with status 200: {"sessionId":"0c38f37b-d539-4348-94ca-8ef9fb2a3931","value":null}
+2023-07-13 13:24:53:334 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop com.torum.app.dev'
+2023-07-13 13:24:53:890 [Instrumentation] .
+2023-07-13 13:24:55:264 [Logcat] Stopping logcat capture
+2023-07-13 13:24:55:271 [ADB] Removing forwarded port socket connection: 10000 
+2023-07-13 13:24:55:272 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:10000'
+2023-07-13 13:24:55:402 [UiAutomator2] Restoring hidden api policy to the device default configuration
+2023-07-13 13:24:55:403 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2023-07-13 13:24:55:788 [Instrumentation] Time: 22.692
+2023-07-13 13:24:55:788 [Instrumentation] 
+2023-07-13 13:24:55:788 [Instrumentation] OK (1 test)
+2023-07-13 13:24:55:891 [BaseDriver] Event 'quitSessionFinished' logged at 1689254695891 (18:54:55 GMT+0530 (India Standard Time))

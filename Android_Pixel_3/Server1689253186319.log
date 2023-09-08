@@ -1,0 +1,186 @@
+2023-07-13 12:59:56:290 [Appium] Welcome to Appium v1.22.3
+2023-07-13 12:59:56:298 [Appium] Non-default server args:
+2023-07-13 12:59:56:301 [Appium]   port: 51469
+2023-07-13 12:59:56:302 [Appium]   sessionOverride: true
+2023-07-13 12:59:56:310 [Appium]   logFile: C:\Users\Rekha\eclipse-workspace\Torum-mobile-automation-master\Android_Pixel_3\Server1689253186319.log
+2023-07-13 12:59:56:464 [Appium] Appium REST http interface listener started on 0.0.0.0:51469
+2023-07-13 12:59:56:608 [HTTP] --> GET /wd/hub/status
+2023-07-13 12:59:56:609 [HTTP] {}
+2023-07-13 12:59:56:614 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2023-07-13 12:59:56:618 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.3"}}
+2023-07-13 12:59:56:636 [HTTP] <-- GET /wd/hub/status 200 21 ms - 68
+2023-07-13 12:59:56:637 [HTTP] 
+2023-07-13 12:59:56:655 [HTTP] --> GET /wd/hub/status
+2023-07-13 12:59:56:660 [HTTP] {}
+2023-07-13 12:59:56:661 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2023-07-13 12:59:56:663 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.3"}}
+2023-07-13 12:59:56:672 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2023-07-13 12:59:56:673 [HTTP] 
+2023-07-13 12:59:56:697 [HTTP] Request idempotency key: 5e93c3df-0c6d-4219-b108-9ce3e56f68ba
+2023-07-13 12:59:56:741 [HTTP] --> POST /wd/hub/session
+2023-07-13 12:59:56:742 [HTTP] {"desiredCapabilities":{"appActivity":"com.torummobile.MainActivity","appPackage":"com.torummobile.dev","automationName":"UiAutomator2","chromeDriverPort":"11000","platformName":"Android","udid":"emulator-5554","deviceName":"Pixel_3","systemPort":"10000"},"capabilities":{"firstMatch":[{"appium:appActivity":"com.torummobile.MainActivity","appium:appPackage":"com.torummobile.dev","appium:automationName":"UiAutomator2","chromeDriverPort":"11000","appium:deviceName":"Pixel_3","platformName":"android","appium:systemPort":"10000","appium:udid":"emulator-5554"}]}}
+2023-07-13 12:59:56:743 [W3C] Calling AppiumDriver.createSession() with args: [{"appActivity":"com.torummobile.MainActivity","appPackage":"com.torummobile.dev","automationName":"UiAutomator2","chromeDriverPort":"11000","platformName":"Android","udid":"emulator-5554","deviceName":"Pixel_3","systemPort":"10000"},null,{"firstMatch":[{"appium:appActivity":"com.torummobile.MainActivity","appium:appPackage":"com.torummobile.dev","appium:automationName":"UiAutomator2","chromeDriverPort":"11000","appium:deviceName":"Pixel_3","platformName":"android","appium:systemPort":"10000","appium:udid":"emulator-5554"}]}]
+2023-07-13 12:59:56:745 [BaseDriver] Event 'newSessionRequested' logged at 1689253196744 (18:29:56 GMT+0530 (India Standard Time))
+2023-07-13 12:59:56:763 [BaseDriver] The following capabilities are not standard capabilities and should have an extension prefix:
+2023-07-13 12:59:56:765 [BaseDriver]   chromeDriverPort
+2023-07-13 12:59:57:946 [Appium] Appium v1.22.3 creating new AndroidUiautomator2Driver (v1.70.1) session
+2023-07-13 12:59:57:947 [Appium] There are no active sessions for cleanup
+2023-07-13 12:59:57:958 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2023-07-13 12:59:57:959 [BaseDriver] Creating session with W3C capabilities: {
+2023-07-13 12:59:57:959 [BaseDriver]   "alwaysMatch": {
+2023-07-13 12:59:57:960 [BaseDriver]     "appium:chromeDriverPort": "11000",
+2023-07-13 12:59:57:960 [BaseDriver]     "platformName": "android",
+2023-07-13 12:59:57:960 [BaseDriver]     "appium:appActivity": "com.torummobile.MainActivity",
+2023-07-13 12:59:57:961 [BaseDriver]     "appium:appPackage": "com.torummobile.dev",
+2023-07-13 12:59:57:962 [BaseDriver]     "appium:automationName": "UiAutomator2",
+2023-07-13 12:59:57:962 [BaseDriver]     "appium:deviceName": "Pixel_3",
+2023-07-13 12:59:57:962 [BaseDriver]     "appium:systemPort": "10000",
+2023-07-13 12:59:57:963 [BaseDriver]     "appium:udid": "emulator-5554"
+2023-07-13 12:59:57:964 [BaseDriver]   },
+2023-07-13 12:59:57:965 [BaseDriver]   "firstMatch": [
+2023-07-13 12:59:57:965 [BaseDriver]     {}
+2023-07-13 12:59:57:966 [BaseDriver]   ]
+2023-07-13 12:59:57:966 [BaseDriver] }
+2023-07-13 12:59:57:976 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2023-07-13 12:59:57:977 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2023-07-13 12:59:57:988 [BaseDriver] Capability 'systemPort' changed from string ('10000') to integer (10000). This may cause unexpected behavior
+2023-07-13 12:59:57:988 [BaseDriver] Capability 'chromeDriverPort' changed from string ('11000') to integer (11000). This may cause unexpected behavior
+2023-07-13 12:59:57:998 [BaseDriver] Session created with session id: e7feadd2-0024-4c72-af86-8e721d9a9748
+2023-07-13 12:59:58:000 [UiAutomator2] Starting 'com.torummobile.dev' directly on the device
+2023-07-13 12:59:58:097 [ADB] Found 2 'build-tools' folders under 'C:\Users\Rekha\AppData\Local\Android\Sdk' (newest first):
+2023-07-13 12:59:58:098 [ADB]     C:/Users/Rekha/AppData/Local/Android/Sdk/build-tools/34.0.0
+2023-07-13 12:59:58:100 [ADB]     C:/Users/Rekha/AppData/Local/Android/Sdk/build-tools/30.0.3
+2023-07-13 12:59:58:103 [ADB] Using 'adb.exe' from 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2023-07-13 12:59:58:108 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2023-07-13 12:59:58:185 [AndroidDriver] Retrieving device list
+2023-07-13 12:59:58:186 [ADB] Trying to find a connected android device
+2023-07-13 12:59:58:187 [ADB] Getting connected devices
+2023-07-13 12:59:58:268 [ADB] Connected devices: [{"udid":"ZD2226MYVB","state":"device"},{"udid":"emulator-5554","state":"device"}]
+2023-07-13 12:59:58:271 [AndroidDriver] Using device: emulator-5554
+2023-07-13 12:59:58:274 [ADB] Using 'adb.exe' from 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2023-07-13 12:59:58:275 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2023-07-13 12:59:58:339 [ADB] Setting device id to emulator-5554
+2023-07-13 12:59:58:341 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2023-07-13 12:59:58:784 [ADB] Current device property 'ro.build.version.sdk': 34
+2023-07-13 12:59:58:784 [ADB] Getting device platform version
+2023-07-13 12:59:58:785 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2023-07-13 12:59:58:984 [ADB] Current device property 'ro.build.version.release': 14
+2023-07-13 12:59:58:985 [ADB] Device API level: 34
+2023-07-13 12:59:58:985 [UiAutomator2] Relaxing hidden api policy
+2023-07-13 12:59:58:986 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2023-07-13 13:00:01:212 [AndroidDriver] No app sent in, not parsing package/activity
+2023-07-13 13:00:01:215 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 wait-for-device'
+2023-07-13 13:00:01:369 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell echo ping'
+2023-07-13 13:00:01:494 [AndroidDriver] Pushing settings apk to device...
+2023-07-13 13:00:01:496 [ADB] Getting install status for io.appium.settings
+2023-07-13 13:00:01:496 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2023-07-13 13:00:06:351 [ADB] 'io.appium.settings' is installed
+2023-07-13 13:00:06:352 [ADB] Getting package info for 'io.appium.settings'
+2023-07-13 13:00:06:353 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2023-07-13 13:00:06:907 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('3.4.0' >= '3.4.0')
+2023-07-13 13:00:06:908 [ADB] There is no need to install/upgrade 'C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+2023-07-13 13:00:06:909 [ADB] Getting IDs of all 'io.appium.settings' processes
+2023-07-13 13:00:06:910 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell 'pgrep --help; echo $?''
+2023-07-13 13:00:07:097 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+2023-07-13 13:00:07:609 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2023-07-13 13:00:07:612 [Logcat] Starting logs capture with command: C:\\Users\\Rekha\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 logcat -v threadtime
+2023-07-13 13:00:07:901 [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to local port 10000
+2023-07-13 13:00:07:910 [ADB] Forwarding system: 10000 to device: 6790
+2023-07-13 13:00:07:910 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 forward tcp:10000 tcp:6790'
+2023-07-13 13:00:07:988 [ADB] Getting install status for io.appium.uiautomator2.server
+2023-07-13 13:00:07:989 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2023-07-13 13:00:08:436 [ADB] 'io.appium.uiautomator2.server' is installed
+2023-07-13 13:00:08:437 [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2023-07-13 13:00:08:438 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2023-07-13 13:00:09:394 [HTTP] <-- POST /wd/hub/session - - ms - -
+2023-07-13 13:00:09:395 [HTTP] 
+2023-07-13 13:00:09:420 uncaughtException: EPIPE: broken pipe, write
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:61:25)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Socket.Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at Console.Writable.write (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:525:35)
+    at addChunk (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)
+2023-07-13 13:00:09:426 uncaughtException: EPIPE: broken pipe, write
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:61:25)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Socket.Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:51:25)
+    at Console._write (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at Console.Writable.write (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:525:35)
+    at addChunk (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)
+2023-07-13 13:00:09:430 uncaughtException: EPIPE: broken pipe, write
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:61:25)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Socket.Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:51:25)
+    at Console._write (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at Console.Writable.write (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:525:35)
+    at addChunk (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)
+2023-07-13 13:00:09:437 uncaughtException: EPIPE: broken pipe, write
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:61:25)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Socket.Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:51:25)
+    at Console._write (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at Console.Writable.write (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:525:35)
+    at addChunk (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)
+2023-07-13 13:00:09:442 uncaughtException: EPIPE: broken pipe, write
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:61:25)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Socket.Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:51:25)
+    at Console._write (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at Console.Writable.write (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:525:35)
+    at addChunk (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)

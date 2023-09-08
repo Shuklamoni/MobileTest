@@ -1,0 +1,25 @@
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:15.059 ServerManager:27 - starting appium server
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:20.136 ServerManager:43 - Appium server started
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:20.179 DriverManager:26 - initializing Appium driver
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:20.225 PropertyManager:16 - loading config properties
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:20.228 CapabilitiesManager:17 - getting capabilities
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:20.241 CapabilitiesManager:33 - appUrl isC:\Users\Rekha\eclipse-workspace\Torum-mobile-automation-master\src\test\resources\app\app-dev-release.apk
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:21.806 ServerManager:27 - starting appium server
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:25.550 ServerManager:43 - Appium server started
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:25.551 DriverManager:26 - initializing Appium driver
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:25.551 PropertyManager:16 - loading config properties
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:25.553 CapabilitiesManager:17 - getting capabilities
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:25.553 CapabilitiesManager:33 - appUrl isC:\Users\Rekha\eclipse-workspace\Torum-mobile-automation-master\src\test\resources\app\app-dev-release.apk
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:26.151 ServerManager:27 - starting appium server
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:31.152 ServerManager:43 - Appium server started
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:31.153 DriverManager:26 - initializing Appium driver
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:31.154 PropertyManager:16 - loading config properties
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:31.156 CapabilitiesManager:17 - getting capabilities
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:31.157 CapabilitiesManager:33 - appUrl isC:\Users\Rekha\eclipse-workspace\Torum-mobile-automation-master\src\test\resources\app\app-dev-release.apk
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:31.992 ServerManager:27 - starting appium server
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:35.336 ServerManager:43 - Appium server started
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:35.337 DriverManager:26 - initializing Appium driver
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:35.337 PropertyManager:16 - loading config properties
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:35.339 CapabilitiesManager:17 - getting capabilities
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:35.340 CapabilitiesManager:33 - appUrl isC:\Users\Rekha\eclipse-workspace\Torum-mobile-automation-master\src\test\resources\app\app-dev-release.apk
+[Android_Pixel_3 INFO ] 2023-07-03 10:23:36.168 ServerManager:27 - starting appium server

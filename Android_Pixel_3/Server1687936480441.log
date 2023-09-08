@@ -1,0 +1,422 @@
+2023-06-28 07:14:45:728 [Appium] Welcome to Appium v1.22.3
+2023-06-28 07:14:45:731 [Appium] Non-default server args:
+2023-06-28 07:14:45:732 [Appium]   port: 50053
+2023-06-28 07:14:45:732 [Appium]   sessionOverride: true
+2023-06-28 07:14:45:732 [Appium]   logFile: C:\Users\Rekha\eclipse-workspace\Torum-mobile-automation-master\Android_Pixel_3\Server1687936480441.log
+2023-06-28 07:14:45:784 [Appium] Appium REST http interface listener started on 0.0.0.0:50053
+2023-06-28 07:14:45:930 [HTTP] --> GET /wd/hub/status
+2023-06-28 07:14:45:931 [HTTP] {}
+2023-06-28 07:14:45:934 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2023-06-28 07:14:45:936 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.3"}}
+2023-06-28 07:14:45:948 [HTTP] <-- GET /wd/hub/status 200 14 ms - 68
+2023-06-28 07:14:45:949 [HTTP] 
+2023-06-28 07:14:45:956 [HTTP] --> GET /wd/hub/status
+2023-06-28 07:14:45:957 [HTTP] {}
+2023-06-28 07:14:45:957 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2023-06-28 07:14:45:958 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.3"}}
+2023-06-28 07:14:45:961 [HTTP] <-- GET /wd/hub/status 200 4 ms - 68
+2023-06-28 07:14:45:961 [HTTP] 
+2023-06-28 07:14:45:980 [HTTP] Request idempotency key: 37660265-de1d-4d60-8076-b6a48642e211
+2023-06-28 07:14:46:013 [HTTP] --> POST /wd/hub/session
+2023-06-28 07:14:46:014 [HTTP] {"desiredCapabilities":{"appActivity":"com.torummobile.MainActivity","appPackage":"com.torummobile.dev","automationName":"UiAutomator2","chromeDriverPort":"11000","platformName":"Android","udid":"emulator-5554","deviceName":"Pixel_3","systemPort":"10000"},"capabilities":{"firstMatch":[{"appium:appActivity":"com.torummobile.MainActivity","appium:appPackage":"com.torummobile.dev","appium:automationName":"UiAutomator2","chromeDriverPort":"11000","appium:deviceName":"Pixel_3","platformName":"android","appium:systemPort":"10000","appium:udid":"emulator-5554"}]}}
+2023-06-28 07:14:46:015 [W3C] Calling AppiumDriver.createSession() with args: [{"appActivity":"com.torummobile.MainActivity","appPackage":"com.torummobile.dev","automationName":"UiAutomator2","chromeDriverPort":"11000","platformName":"Android","udid":"emulator-5554","deviceName":"Pixel_3","systemPort":"10000"},null,{"firstMatch":[{"appium:appActivity":"com.torummobile.MainActivity","appium:appPackage":"com.torummobile.dev","appium:automationName":"UiAutomator2","chromeDriverPort":"11000","appium:deviceName":"Pixel_3","platformName":"android","appium:systemPort":"10000","appium:udid":"emulator-5554"}]}]
+2023-06-28 07:14:46:017 [BaseDriver] Event 'newSessionRequested' logged at 1687936486016 (12:44:46 GMT+0530 (India Standard Time))
+2023-06-28 07:14:46:024 [BaseDriver] The following capabilities are not standard capabilities and should have an extension prefix:
+2023-06-28 07:14:46:024 [BaseDriver]   chromeDriverPort
+2023-06-28 07:14:46:514 [Appium] Appium v1.22.3 creating new AndroidUiautomator2Driver (v1.70.1) session
+2023-06-28 07:14:46:515 [Appium] There are no active sessions for cleanup
+2023-06-28 07:14:46:520 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2023-06-28 07:14:46:520 [BaseDriver] Creating session with W3C capabilities: {
+2023-06-28 07:14:46:520 [BaseDriver]   "alwaysMatch": {
+2023-06-28 07:14:46:520 [BaseDriver]     "appium:chromeDriverPort": "11000",
+2023-06-28 07:14:46:521 [BaseDriver]     "platformName": "android",
+2023-06-28 07:14:46:521 [BaseDriver]     "appium:appActivity": "com.torummobile.MainActivity",
+2023-06-28 07:14:46:521 [BaseDriver]     "appium:appPackage": "com.torummobile.dev",
+2023-06-28 07:14:46:521 [BaseDriver]     "appium:automationName": "UiAutomator2",
+2023-06-28 07:14:46:521 [BaseDriver]     "appium:deviceName": "Pixel_3",
+2023-06-28 07:14:46:521 [BaseDriver]     "appium:systemPort": "10000",
+2023-06-28 07:14:46:521 [BaseDriver]     "appium:udid": "emulator-5554"
+2023-06-28 07:14:46:522 [BaseDriver]   },
+2023-06-28 07:14:46:522 [BaseDriver]   "firstMatch": [
+2023-06-28 07:14:46:523 [BaseDriver]     {}
+2023-06-28 07:14:46:523 [BaseDriver]   ]
+2023-06-28 07:14:46:523 [BaseDriver] }
+2023-06-28 07:14:46:527 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2023-06-28 07:14:46:527 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2023-06-28 07:14:46:533 [BaseDriver] Capability 'systemPort' changed from string ('10000') to integer (10000). This may cause unexpected behavior
+2023-06-28 07:14:46:534 [BaseDriver] Capability 'chromeDriverPort' changed from string ('11000') to integer (11000). This may cause unexpected behavior
+2023-06-28 07:14:46:537 [BaseDriver] Session created with session id: 2960cc6d-51dd-45f5-a8c0-4e645d3b58e2
+2023-06-28 07:14:46:538 [UiAutomator2] Starting 'com.torummobile.dev' directly on the device
+2023-06-28 07:14:46:585 [ADB] Found 2 'build-tools' folders under 'C:\Users\Rekha\AppData\Local\Android\Sdk' (newest first):
+2023-06-28 07:14:46:585 [ADB]     C:/Users/Rekha/AppData/Local/Android/Sdk/build-tools/34.0.0
+2023-06-28 07:14:46:585 [ADB]     C:/Users/Rekha/AppData/Local/Android/Sdk/build-tools/30.0.3
+2023-06-28 07:14:46:587 [ADB] Using 'adb.exe' from 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2023-06-28 07:14:46:588 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2023-06-28 07:14:46:638 [AndroidDriver] Retrieving device list
+2023-06-28 07:14:46:639 [ADB] Trying to find a connected android device
+2023-06-28 07:14:46:640 [ADB] Getting connected devices
+2023-06-28 07:14:46:682 [ADB] No connected devices have been detected
+2023-06-28 07:14:46:683 [ADB] Could not find online devices
+2023-06-28 07:14:46:683 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:46:684 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:46:933 [ADB] Getting connected devices
+2023-06-28 07:14:46:973 [ADB] No connected devices have been detected
+2023-06-28 07:14:46:973 [ADB] Could not find online devices
+2023-06-28 07:14:46:973 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:46:974 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:47:229 [ADB] Getting connected devices
+2023-06-28 07:14:47:268 [ADB] No connected devices have been detected
+2023-06-28 07:14:47:269 [ADB] Could not find online devices
+2023-06-28 07:14:47:269 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:47:269 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:47:510 [ADB] Getting connected devices
+2023-06-28 07:14:47:551 [ADB] No connected devices have been detected
+2023-06-28 07:14:47:551 [ADB] Could not find online devices
+2023-06-28 07:14:47:552 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:47:552 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:47:807 [ADB] Getting connected devices
+2023-06-28 07:14:47:848 [ADB] No connected devices have been detected
+2023-06-28 07:14:47:848 [ADB] Could not find online devices
+2023-06-28 07:14:47:849 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:47:849 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:48:101 [ADB] Getting connected devices
+2023-06-28 07:14:48:139 [ADB] No connected devices have been detected
+2023-06-28 07:14:48:140 [ADB] Could not find online devices
+2023-06-28 07:14:48:140 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:48:140 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:48:395 [ADB] Getting connected devices
+2023-06-28 07:14:48:439 [ADB] No connected devices have been detected
+2023-06-28 07:14:48:439 [ADB] Could not find online devices
+2023-06-28 07:14:48:439 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:48:440 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:48:693 [ADB] Getting connected devices
+2023-06-28 07:14:48:735 [ADB] No connected devices have been detected
+2023-06-28 07:14:48:735 [ADB] Could not find online devices
+2023-06-28 07:14:48:735 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:48:736 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:48:989 [ADB] Getting connected devices
+2023-06-28 07:14:49:027 [ADB] No connected devices have been detected
+2023-06-28 07:14:49:027 [ADB] Could not find online devices
+2023-06-28 07:14:49:027 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:49:028 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:49:268 [ADB] Getting connected devices
+2023-06-28 07:14:49:311 [ADB] No connected devices have been detected
+2023-06-28 07:14:49:311 [ADB] Could not find online devices
+2023-06-28 07:14:49:312 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:49:312 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:49:564 [ADB] Getting connected devices
+2023-06-28 07:14:49:603 [ADB] No connected devices have been detected
+2023-06-28 07:14:49:604 [ADB] Could not find online devices
+2023-06-28 07:14:49:604 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:49:604 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:49:844 [ADB] Getting connected devices
+2023-06-28 07:14:49:887 [ADB] No connected devices have been detected
+2023-06-28 07:14:49:888 [ADB] Could not find online devices
+2023-06-28 07:14:49:888 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:49:888 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:50:137 [ADB] Getting connected devices
+2023-06-28 07:14:50:179 [ADB] No connected devices have been detected
+2023-06-28 07:14:50:179 [ADB] Could not find online devices
+2023-06-28 07:14:50:179 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:50:180 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:50:433 [ADB] Getting connected devices
+2023-06-28 07:14:50:477 [ADB] No connected devices have been detected
+2023-06-28 07:14:50:477 [ADB] Could not find online devices
+2023-06-28 07:14:50:477 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:50:478 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:50:731 [ADB] Getting connected devices
+2023-06-28 07:14:50:770 [ADB] No connected devices have been detected
+2023-06-28 07:14:50:770 [ADB] Could not find online devices
+2023-06-28 07:14:50:771 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:50:771 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:51:025 [ADB] Getting connected devices
+2023-06-28 07:14:51:063 [ADB] No connected devices have been detected
+2023-06-28 07:14:51:064 [ADB] Could not find online devices
+2023-06-28 07:14:51:064 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:51:064 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:51:308 [ADB] Getting connected devices
+2023-06-28 07:14:51:353 [ADB] No connected devices have been detected
+2023-06-28 07:14:51:353 [ADB] Could not find online devices
+2023-06-28 07:14:51:354 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:51:354 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:51:604 [ADB] Getting connected devices
+2023-06-28 07:14:51:644 [ADB] No connected devices have been detected
+2023-06-28 07:14:51:645 [ADB] Could not find online devices
+2023-06-28 07:14:51:645 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:51:646 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:51:900 [ADB] Getting connected devices
+2023-06-28 07:14:51:944 [ADB] No connected devices have been detected
+2023-06-28 07:14:51:945 [ADB] Could not find online devices
+2023-06-28 07:14:51:945 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:51:945 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:52:196 [ADB] Getting connected devices
+2023-06-28 07:14:52:219 [ADB] No connected devices have been detected
+2023-06-28 07:14:52:219 [ADB] Could not find online devices
+2023-06-28 07:14:52:219 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:52:220 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:52:448 [ADB] Getting connected devices
+2023-06-28 07:14:52:473 [ADB] No connected devices have been detected
+2023-06-28 07:14:52:473 [ADB] Could not find online devices
+2023-06-28 07:14:52:474 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:52:474 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:52:711 [ADB] Getting connected devices
+2023-06-28 07:14:52:737 [ADB] No connected devices have been detected
+2023-06-28 07:14:52:737 [ADB] Could not find online devices
+2023-06-28 07:14:52:737 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:52:737 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:52:975 [ADB] Getting connected devices
+2023-06-28 07:14:53:001 [ADB] No connected devices have been detected
+2023-06-28 07:14:53:001 [ADB] Could not find online devices
+2023-06-28 07:14:53:001 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:53:001 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:53:236 [ADB] Getting connected devices
+2023-06-28 07:14:53:263 [ADB] No connected devices have been detected
+2023-06-28 07:14:53:263 [ADB] Could not find online devices
+2023-06-28 07:14:53:264 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:53:264 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:53:502 [ADB] Getting connected devices
+2023-06-28 07:14:53:527 [ADB] No connected devices have been detected
+2023-06-28 07:14:53:527 [ADB] Could not find online devices
+2023-06-28 07:14:53:527 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:53:528 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:53:769 [ADB] Getting connected devices
+2023-06-28 07:14:53:812 [ADB] No connected devices have been detected
+2023-06-28 07:14:53:812 [ADB] Could not find online devices
+2023-06-28 07:14:53:812 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:53:812 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:54:063 [ADB] Getting connected devices
+2023-06-28 07:14:54:103 [ADB] No connected devices have been detected
+2023-06-28 07:14:54:103 [ADB] Could not find online devices
+2023-06-28 07:14:54:103 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:54:103 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:54:359 [ADB] Getting connected devices
+2023-06-28 07:14:54:397 [ADB] No connected devices have been detected
+2023-06-28 07:14:54:397 [ADB] Could not find online devices
+2023-06-28 07:14:54:398 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:54:398 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:54:655 [ADB] Getting connected devices
+2023-06-28 07:14:54:693 [ADB] No connected devices have been detected
+2023-06-28 07:14:54:693 [ADB] Could not find online devices
+2023-06-28 07:14:54:693 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:54:694 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:54:949 [ADB] Getting connected devices
+2023-06-28 07:14:54:990 [ADB] No connected devices have been detected
+2023-06-28 07:14:54:991 [ADB] Could not find online devices
+2023-06-28 07:14:54:991 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:54:991 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:55:247 [ADB] Getting connected devices
+2023-06-28 07:14:55:289 [ADB] No connected devices have been detected
+2023-06-28 07:14:55:290 [ADB] Could not find online devices
+2023-06-28 07:14:55:290 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:55:290 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:55:547 [ADB] Getting connected devices
+2023-06-28 07:14:55:586 [ADB] No connected devices have been detected
+2023-06-28 07:14:55:586 [ADB] Could not find online devices
+2023-06-28 07:14:55:586 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:55:586 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:55:840 [ADB] Getting connected devices
+2023-06-28 07:14:55:881 [ADB] No connected devices have been detected
+2023-06-28 07:14:55:881 [ADB] Could not find online devices
+2023-06-28 07:14:55:881 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:55:882 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:56:139 [ADB] Getting connected devices
+2023-06-28 07:14:56:181 [ADB] No connected devices have been detected
+2023-06-28 07:14:56:181 [ADB] Could not find online devices
+2023-06-28 07:14:56:181 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:56:181 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:56:437 [ADB] Getting connected devices
+2023-06-28 07:14:56:478 [ADB] No connected devices have been detected
+2023-06-28 07:14:56:478 [ADB] Could not find online devices
+2023-06-28 07:14:56:478 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:56:478 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:56:733 [ADB] Getting connected devices
+2023-06-28 07:14:56:775 [ADB] No connected devices have been detected
+2023-06-28 07:14:56:775 [ADB] Could not find online devices
+2023-06-28 07:14:56:775 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:56:775 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:57:028 [ADB] Getting connected devices
+2023-06-28 07:14:57:072 [ADB] No connected devices have been detected
+2023-06-28 07:14:57:073 [ADB] Could not find online devices
+2023-06-28 07:14:57:073 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:57:073 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:57:323 [ADB] Getting connected devices
+2023-06-28 07:14:57:361 [ADB] No connected devices have been detected
+2023-06-28 07:14:57:361 [ADB] Could not find online devices
+2023-06-28 07:14:57:361 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:57:362 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:57:604 [ADB] Getting connected devices
+2023-06-28 07:14:57:645 [ADB] No connected devices have been detected
+2023-06-28 07:14:57:645 [ADB] Could not find online devices
+2023-06-28 07:14:57:646 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:57:646 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:57:901 [ADB] Getting connected devices
+2023-06-28 07:14:57:943 [ADB] No connected devices have been detected
+2023-06-28 07:14:57:943 [ADB] Could not find online devices
+2023-06-28 07:14:57:943 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:57:944 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:58:194 [ADB] Getting connected devices
+2023-06-28 07:14:58:234 [ADB] No connected devices have been detected
+2023-06-28 07:14:58:235 [ADB] Could not find online devices
+2023-06-28 07:14:58:235 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:58:235 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:58:478 [ADB] Getting connected devices
+2023-06-28 07:14:58:518 [ADB] No connected devices have been detected
+2023-06-28 07:14:58:519 [ADB] Could not find online devices
+2023-06-28 07:14:58:519 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:58:519 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:58:760 [ADB] Getting connected devices
+2023-06-28 07:14:58:798 [ADB] No connected devices have been detected
+2023-06-28 07:14:58:799 [ADB] Could not find online devices
+2023-06-28 07:14:58:799 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:58:799 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:59:056 [ADB] Getting connected devices
+2023-06-28 07:14:59:097 [ADB] No connected devices have been detected
+2023-06-28 07:14:59:097 [ADB] Could not find online devices
+2023-06-28 07:14:59:097 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:59:097 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:59:337 [ADB] Getting connected devices
+2023-06-28 07:14:59:378 [ADB] No connected devices have been detected
+2023-06-28 07:14:59:379 [ADB] Could not find online devices
+2023-06-28 07:14:59:379 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:59:379 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:59:620 [ADB] Getting connected devices
+2023-06-28 07:14:59:660 [ADB] No connected devices have been detected
+2023-06-28 07:14:59:660 [ADB] Could not find online devices
+2023-06-28 07:14:59:661 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:59:661 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:14:59:899 [ADB] Getting connected devices
+2023-06-28 07:14:59:939 [ADB] No connected devices have been detected
+2023-06-28 07:14:59:939 [ADB] Could not find online devices
+2023-06-28 07:14:59:939 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:14:59:939 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:00:182 [ADB] Getting connected devices
+2023-06-28 07:15:00:223 [ADB] No connected devices have been detected
+2023-06-28 07:15:00:223 [ADB] Could not find online devices
+2023-06-28 07:15:00:223 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:00:224 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:00:465 [ADB] Getting connected devices
+2023-06-28 07:15:00:507 [ADB] No connected devices have been detected
+2023-06-28 07:15:00:507 [ADB] Could not find online devices
+2023-06-28 07:15:00:507 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:00:508 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:00:762 [ADB] Getting connected devices
+2023-06-28 07:15:00:801 [ADB] No connected devices have been detected
+2023-06-28 07:15:00:801 [ADB] Could not find online devices
+2023-06-28 07:15:00:801 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:00:801 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:01:058 [ADB] Getting connected devices
+2023-06-28 07:15:01:101 [ADB] No connected devices have been detected
+2023-06-28 07:15:01:102 [ADB] Could not find online devices
+2023-06-28 07:15:01:102 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:01:102 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:01:356 [ADB] Getting connected devices
+2023-06-28 07:15:01:396 [ADB] No connected devices have been detected
+2023-06-28 07:15:01:396 [ADB] Could not find online devices
+2023-06-28 07:15:01:396 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:01:396 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:01:652 [ADB] Getting connected devices
+2023-06-28 07:15:01:693 [ADB] No connected devices have been detected
+2023-06-28 07:15:01:694 [ADB] Could not find online devices
+2023-06-28 07:15:01:694 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:01:694 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:01:933 [ADB] Getting connected devices
+2023-06-28 07:15:01:975 [ADB] No connected devices have been detected
+2023-06-28 07:15:01:975 [ADB] Could not find online devices
+2023-06-28 07:15:01:975 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:01:975 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:02:230 [ADB] Getting connected devices
+2023-06-28 07:15:02:273 [ADB] No connected devices have been detected
+2023-06-28 07:15:02:273 [ADB] Could not find online devices
+2023-06-28 07:15:02:273 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:02:274 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:02:526 [ADB] Getting connected devices
+2023-06-28 07:15:02:581 [ADB] No connected devices have been detected
+2023-06-28 07:15:02:581 [ADB] Could not find online devices
+2023-06-28 07:15:02:581 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:02:582 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:02:839 [ADB] Getting connected devices
+2023-06-28 07:15:02:880 [ADB] No connected devices have been detected
+2023-06-28 07:15:02:880 [ADB] Could not find online devices
+2023-06-28 07:15:02:880 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:02:881 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:03:137 [ADB] Getting connected devices
+2023-06-28 07:15:03:178 [ADB] No connected devices have been detected
+2023-06-28 07:15:03:178 [ADB] Could not find online devices
+2023-06-28 07:15:03:178 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:03:179 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:03:418 [ADB] Getting connected devices
+2023-06-28 07:15:03:461 [ADB] No connected devices have been detected
+2023-06-28 07:15:03:462 [ADB] Could not find online devices
+2023-06-28 07:15:03:462 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:03:462 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:03:716 [ADB] Getting connected devices
+2023-06-28 07:15:03:759 [ADB] No connected devices have been detected
+2023-06-28 07:15:03:760 [ADB] Could not find online devices
+2023-06-28 07:15:03:760 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:03:760 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:04:012 [ADB] Getting connected devices
+2023-06-28 07:15:04:051 [ADB] No connected devices have been detected
+2023-06-28 07:15:04:052 [ADB] Could not find online devices
+2023-06-28 07:15:04:052 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:04:052 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:04:297 [ADB] Getting connected devices
+2023-06-28 07:15:04:341 [ADB] No connected devices have been detected
+2023-06-28 07:15:04:341 [ADB] Could not find online devices
+2023-06-28 07:15:04:342 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:04:342 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:04:596 [ADB] Getting connected devices
+2023-06-28 07:15:04:639 [ADB] No connected devices have been detected
+2023-06-28 07:15:04:639 [ADB] Could not find online devices
+2023-06-28 07:15:04:640 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:04:640 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:04:894 [ADB] Getting connected devices
+2023-06-28 07:15:04:938 [ADB] No connected devices have been detected
+2023-06-28 07:15:04:938 [ADB] Could not find online devices
+2023-06-28 07:15:04:938 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:04:939 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:05:189 [ADB] Getting connected devices
+2023-06-28 07:15:05:230 [ADB] No connected devices have been detected
+2023-06-28 07:15:05:231 [ADB] Could not find online devices
+2023-06-28 07:15:05:231 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:05:231 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:05:486 [ADB] Getting connected devices
+2023-06-28 07:15:05:532 [ADB] No connected devices have been detected
+2023-06-28 07:15:05:533 [ADB] Could not find online devices
+2023-06-28 07:15:05:533 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:05:533 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:05:796 [ADB] Getting connected devices
+2023-06-28 07:15:05:841 [ADB] No connected devices have been detected
+2023-06-28 07:15:05:841 [ADB] Could not find online devices
+2023-06-28 07:15:05:842 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:05:842 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:06:090 [ADB] Getting connected devices
+2023-06-28 07:15:06:134 [ADB] No connected devices have been detected
+2023-06-28 07:15:06:135 [ADB] Could not find online devices
+2023-06-28 07:15:06:135 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:06:135 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:06:387 [ADB] Getting connected devices
+2023-06-28 07:15:06:430 [ADB] No connected devices have been detected
+2023-06-28 07:15:06:430 [ADB] Could not find online devices
+2023-06-28 07:15:06:430 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:06:431 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:06:688 [UiAutomator2] Deleting UiAutomator2 session
+2023-06-28 07:15:06:691 [BaseDriver] Event 'newSessionStarted' logged at 1687936506691 (12:45:06 GMT+0530 (India Standard Time))
+2023-06-28 07:15:06:783 [W3C] Encountered internal error running command: Error: Could not find a connected Android device in 20046ms.
+2023-06-28 07:15:06:783 [W3C]     at getDevices (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:266:13)
+2023-06-28 07:15:06:783 [W3C]     at getDevices (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:18)
+2023-06-28 07:15:06:783 [W3C]     at getDevices (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2023-06-28 07:15:06:784 [W3C]     at getDevices (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2023-06-28 07:15:06:784 [W3C]     at getDevices (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2023-06-28 07:15:06:784 [W3C]     at getDevices (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2023-06-28 07:15:06:784 [W3C]     at getDevices (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2023-06-28 07:15:06:784 [W3C]     at getDevices (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2023-06-28 07:15:06:784 [W3C]     at getDevices (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2023-06-28 07:15:06:784 [W3C]     at getDevices (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2023-06-28 07:15:06:785 [W3C]     at getDevices (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2023-06-28 07:15:06:785 [W3C]     at getDevices (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2023-06-28 07:15:06:785 [W3C]     at getDevices (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2023-06-28 07:15:06:785 [W3C]     at getDevices (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2023-06-28 07:15:06:785 [W3C]     at getDevices (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2023-06-28 07:15:06:785 [W3C]     at getDevices (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:283:12)
+2023-06-28 07:15:06:832 [HTTP] <-- POST /wd/hub/session 500 20816 ms - 667
+2023-06-28 07:15:06:832 [HTTP] 

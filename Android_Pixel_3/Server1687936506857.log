@@ -1,0 +1,413 @@
+2023-06-28 07:15:12:272 [Appium] Welcome to Appium v1.22.3
+2023-06-28 07:15:12:275 [Appium] Non-default server args:
+2023-06-28 07:15:12:277 [Appium]   port: 56620
+2023-06-28 07:15:12:277 [Appium]   sessionOverride: true
+2023-06-28 07:15:12:278 [Appium]   logFile: C:\Users\Rekha\eclipse-workspace\Torum-mobile-automation-master\Android_Pixel_3\Server1687936506857.log
+2023-06-28 07:15:12:354 [Appium] Appium REST http interface listener started on 0.0.0.0:56620
+2023-06-28 07:15:12:671 [HTTP] --> GET /wd/hub/status
+2023-06-28 07:15:12:672 [HTTP] {}
+2023-06-28 07:15:12:675 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2023-06-28 07:15:12:678 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.3"}}
+2023-06-28 07:15:12:691 [HTTP] <-- GET /wd/hub/status 200 15 ms - 68
+2023-06-28 07:15:12:692 [HTTP] 
+2023-06-28 07:15:12:703 [HTTP] --> GET /wd/hub/status
+2023-06-28 07:15:12:704 [HTTP] {}
+2023-06-28 07:15:12:705 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2023-06-28 07:15:12:706 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.3"}}
+2023-06-28 07:15:12:709 [HTTP] <-- GET /wd/hub/status 200 5 ms - 68
+2023-06-28 07:15:12:710 [HTTP] 
+2023-06-28 07:15:12:730 [HTTP] Request idempotency key: a74ecb55-5031-438a-8304-04168f9bd30a
+2023-06-28 07:15:12:769 [HTTP] --> POST /wd/hub/session
+2023-06-28 07:15:12:770 [HTTP] {"desiredCapabilities":{"appActivity":"com.torummobile.MainActivity","appPackage":"com.torummobile.dev","automationName":"UiAutomator2","chromeDriverPort":"11000","platformName":"Android","udid":"emulator-5554","deviceName":"Pixel_3","systemPort":"10000"},"capabilities":{"firstMatch":[{"appium:appActivity":"com.torummobile.MainActivity","appium:appPackage":"com.torummobile.dev","appium:automationName":"UiAutomator2","chromeDriverPort":"11000","appium:deviceName":"Pixel_3","platformName":"android","appium:systemPort":"10000","appium:udid":"emulator-5554"}]}}
+2023-06-28 07:15:12:772 [W3C] Calling AppiumDriver.createSession() with args: [{"appActivity":"com.torummobile.MainActivity","appPackage":"com.torummobile.dev","automationName":"UiAutomator2","chromeDriverPort":"11000","platformName":"Android","udid":"emulator-5554","deviceName":"Pixel_3","systemPort":"10000"},null,{"firstMatch":[{"appium:appActivity":"com.torummobile.MainActivity","appium:appPackage":"com.torummobile.dev","appium:automationName":"UiAutomator2","chromeDriverPort":"11000","appium:deviceName":"Pixel_3","platformName":"android","appium:systemPort":"10000","appium:udid":"emulator-5554"}]}]
+2023-06-28 07:15:12:773 [BaseDriver] Event 'newSessionRequested' logged at 1687936512772 (12:45:12 GMT+0530 (India Standard Time))
+2023-06-28 07:15:12:781 [BaseDriver] The following capabilities are not standard capabilities and should have an extension prefix:
+2023-06-28 07:15:12:782 [BaseDriver]   chromeDriverPort
+2023-06-28 07:15:13:314 [Appium] Appium v1.22.3 creating new AndroidUiautomator2Driver (v1.70.1) session
+2023-06-28 07:15:13:315 [Appium] There are no active sessions for cleanup
+2023-06-28 07:15:13:319 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2023-06-28 07:15:13:319 [BaseDriver] Creating session with W3C capabilities: {
+2023-06-28 07:15:13:320 [BaseDriver]   "alwaysMatch": {
+2023-06-28 07:15:13:320 [BaseDriver]     "appium:chromeDriverPort": "11000",
+2023-06-28 07:15:13:320 [BaseDriver]     "platformName": "android",
+2023-06-28 07:15:13:320 [BaseDriver]     "appium:appActivity": "com.torummobile.MainActivity",
+2023-06-28 07:15:13:320 [BaseDriver]     "appium:appPackage": "com.torummobile.dev",
+2023-06-28 07:15:13:320 [BaseDriver]     "appium:automationName": "UiAutomator2",
+2023-06-28 07:15:13:321 [BaseDriver]     "appium:deviceName": "Pixel_3",
+2023-06-28 07:15:13:321 [BaseDriver]     "appium:systemPort": "10000",
+2023-06-28 07:15:13:321 [BaseDriver]     "appium:udid": "emulator-5554"
+2023-06-28 07:15:13:321 [BaseDriver]   },
+2023-06-28 07:15:13:321 [BaseDriver]   "firstMatch": [
+2023-06-28 07:15:13:321 [BaseDriver]     {}
+2023-06-28 07:15:13:322 [BaseDriver]   ]
+2023-06-28 07:15:13:322 [BaseDriver] }
+2023-06-28 07:15:13:325 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2023-06-28 07:15:13:325 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2023-06-28 07:15:13:330 [BaseDriver] Capability 'systemPort' changed from string ('10000') to integer (10000). This may cause unexpected behavior
+2023-06-28 07:15:13:330 [BaseDriver] Capability 'chromeDriverPort' changed from string ('11000') to integer (11000). This may cause unexpected behavior
+2023-06-28 07:15:13:334 [BaseDriver] Session created with session id: bbd1cb8a-758a-4c72-b4d6-f6a1a7cd27da
+2023-06-28 07:15:13:335 [UiAutomator2] Starting 'com.torummobile.dev' directly on the device
+2023-06-28 07:15:13:392 [ADB] Found 2 'build-tools' folders under 'C:\Users\Rekha\AppData\Local\Android\Sdk' (newest first):
+2023-06-28 07:15:13:393 [ADB]     C:/Users/Rekha/AppData/Local/Android/Sdk/build-tools/34.0.0
+2023-06-28 07:15:13:393 [ADB]     C:/Users/Rekha/AppData/Local/Android/Sdk/build-tools/30.0.3
+2023-06-28 07:15:13:394 [ADB] Using 'adb.exe' from 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2023-06-28 07:15:13:397 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2023-06-28 07:15:13:452 [AndroidDriver] Retrieving device list
+2023-06-28 07:15:13:453 [ADB] Trying to find a connected android device
+2023-06-28 07:15:13:454 [ADB] Getting connected devices
+2023-06-28 07:15:13:504 [ADB] No connected devices have been detected
+2023-06-28 07:15:13:505 [ADB] Could not find online devices
+2023-06-28 07:15:13:505 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:13:506 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:13:755 [ADB] Getting connected devices
+2023-06-28 07:15:13:797 [ADB] No connected devices have been detected
+2023-06-28 07:15:13:798 [ADB] Could not find online devices
+2023-06-28 07:15:13:798 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:13:798 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:14:053 [ADB] Getting connected devices
+2023-06-28 07:15:14:095 [ADB] No connected devices have been detected
+2023-06-28 07:15:14:095 [ADB] Could not find online devices
+2023-06-28 07:15:14:096 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:14:096 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:14:351 [ADB] Getting connected devices
+2023-06-28 07:15:14:389 [ADB] No connected devices have been detected
+2023-06-28 07:15:14:390 [ADB] Could not find online devices
+2023-06-28 07:15:14:390 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:14:390 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:14:631 [ADB] Getting connected devices
+2023-06-28 07:15:14:674 [ADB] No connected devices have been detected
+2023-06-28 07:15:14:674 [ADB] Could not find online devices
+2023-06-28 07:15:14:675 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:14:675 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:14:925 [ADB] Getting connected devices
+2023-06-28 07:15:14:970 [ADB] No connected devices have been detected
+2023-06-28 07:15:14:970 [ADB] Could not find online devices
+2023-06-28 07:15:14:970 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:14:971 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:15:221 [ADB] Getting connected devices
+2023-06-28 07:15:15:264 [ADB] No connected devices have been detected
+2023-06-28 07:15:15:264 [ADB] Could not find online devices
+2023-06-28 07:15:15:265 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:15:265 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:15:520 [ADB] Getting connected devices
+2023-06-28 07:15:15:562 [ADB] No connected devices have been detected
+2023-06-28 07:15:15:562 [ADB] Could not find online devices
+2023-06-28 07:15:15:562 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:15:563 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:15:821 [ADB] Getting connected devices
+2023-06-28 07:15:15:859 [ADB] No connected devices have been detected
+2023-06-28 07:15:15:859 [ADB] Could not find online devices
+2023-06-28 07:15:15:859 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:15:860 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:16:100 [ADB] Getting connected devices
+2023-06-28 07:15:16:141 [ADB] No connected devices have been detected
+2023-06-28 07:15:16:142 [ADB] Could not find online devices
+2023-06-28 07:15:16:142 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:16:142 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:16:383 [ADB] Getting connected devices
+2023-06-28 07:15:16:424 [ADB] No connected devices have been detected
+2023-06-28 07:15:16:425 [ADB] Could not find online devices
+2023-06-28 07:15:16:425 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:16:425 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:16:681 [ADB] Getting connected devices
+2023-06-28 07:15:16:722 [ADB] No connected devices have been detected
+2023-06-28 07:15:16:722 [ADB] Could not find online devices
+2023-06-28 07:15:16:722 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:16:722 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:16:977 [ADB] Getting connected devices
+2023-06-28 07:15:17:018 [ADB] No connected devices have been detected
+2023-06-28 07:15:17:019 [ADB] Could not find online devices
+2023-06-28 07:15:17:019 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:17:019 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:17:272 [ADB] Getting connected devices
+2023-06-28 07:15:17:313 [ADB] No connected devices have been detected
+2023-06-28 07:15:17:314 [ADB] Could not find online devices
+2023-06-28 07:15:17:314 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:17:314 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:17:567 [ADB] Getting connected devices
+2023-06-28 07:15:17:607 [ADB] No connected devices have been detected
+2023-06-28 07:15:17:608 [ADB] Could not find online devices
+2023-06-28 07:15:17:608 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:17:608 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:17:861 [ADB] Getting connected devices
+2023-06-28 07:15:17:900 [ADB] No connected devices have been detected
+2023-06-28 07:15:17:900 [ADB] Could not find online devices
+2023-06-28 07:15:17:901 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:17:901 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:18:143 [ADB] Getting connected devices
+2023-06-28 07:15:18:185 [ADB] No connected devices have been detected
+2023-06-28 07:15:18:185 [ADB] Could not find online devices
+2023-06-28 07:15:18:185 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:18:186 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:18:425 [ADB] Getting connected devices
+2023-06-28 07:15:18:468 [ADB] No connected devices have been detected
+2023-06-28 07:15:18:468 [ADB] Could not find online devices
+2023-06-28 07:15:18:468 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:18:469 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:18:726 [ADB] Getting connected devices
+2023-06-28 07:15:18:766 [ADB] No connected devices have been detected
+2023-06-28 07:15:18:767 [ADB] Could not find online devices
+2023-06-28 07:15:18:767 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:18:767 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:19:007 [ADB] Getting connected devices
+2023-06-28 07:15:19:046 [ADB] No connected devices have been detected
+2023-06-28 07:15:19:046 [ADB] Could not find online devices
+2023-06-28 07:15:19:046 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:19:046 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:19:289 [ADB] Getting connected devices
+2023-06-28 07:15:19:328 [ADB] No connected devices have been detected
+2023-06-28 07:15:19:328 [ADB] Could not find online devices
+2023-06-28 07:15:19:328 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:19:328 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:19:570 [ADB] Getting connected devices
+2023-06-28 07:15:19:594 [ADB] No connected devices have been detected
+2023-06-28 07:15:19:594 [ADB] Could not find online devices
+2023-06-28 07:15:19:594 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:19:595 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:19:817 [ADB] Getting connected devices
+2023-06-28 07:15:19:842 [ADB] No connected devices have been detected
+2023-06-28 07:15:19:842 [ADB] Could not find online devices
+2023-06-28 07:15:19:842 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:19:842 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:20:068 [ADB] Getting connected devices
+2023-06-28 07:15:20:092 [ADB] No connected devices have been detected
+2023-06-28 07:15:20:092 [ADB] Could not find online devices
+2023-06-28 07:15:20:092 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:20:092 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:20:333 [ADB] Getting connected devices
+2023-06-28 07:15:20:356 [ADB] No connected devices have been detected
+2023-06-28 07:15:20:356 [ADB] Could not find online devices
+2023-06-28 07:15:20:356 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:20:357 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:20:582 [ADB] Getting connected devices
+2023-06-28 07:15:20:607 [ADB] No connected devices have been detected
+2023-06-28 07:15:20:607 [ADB] Could not find online devices
+2023-06-28 07:15:20:607 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:20:607 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:20:847 [ADB] Getting connected devices
+2023-06-28 07:15:20:871 [ADB] No connected devices have been detected
+2023-06-28 07:15:20:871 [ADB] Could not find online devices
+2023-06-28 07:15:20:871 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:20:871 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:21:100 [ADB] Getting connected devices
+2023-06-28 07:15:21:139 [ADB] No connected devices have been detected
+2023-06-28 07:15:21:139 [ADB] Could not find online devices
+2023-06-28 07:15:21:140 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:21:140 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:21:394 [ADB] Getting connected devices
+2023-06-28 07:15:21:434 [ADB] No connected devices have been detected
+2023-06-28 07:15:21:434 [ADB] Could not find online devices
+2023-06-28 07:15:21:435 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:21:435 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:21:679 [ADB] Getting connected devices
+2023-06-28 07:15:21:720 [ADB] No connected devices have been detected
+2023-06-28 07:15:21:720 [ADB] Could not find online devices
+2023-06-28 07:15:21:720 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:21:720 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:21:975 [ADB] Getting connected devices
+2023-06-28 07:15:22:016 [ADB] No connected devices have been detected
+2023-06-28 07:15:22:017 [ADB] Could not find online devices
+2023-06-28 07:15:22:017 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:22:017 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:22:272 [ADB] Getting connected devices
+2023-06-28 07:15:22:314 [ADB] No connected devices have been detected
+2023-06-28 07:15:22:314 [ADB] Could not find online devices
+2023-06-28 07:15:22:315 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:22:315 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:22:569 [ADB] Getting connected devices
+2023-06-28 07:15:22:610 [ADB] No connected devices have been detected
+2023-06-28 07:15:22:611 [ADB] Could not find online devices
+2023-06-28 07:15:22:611 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:22:611 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:22:864 [ADB] Getting connected devices
+2023-06-28 07:15:22:903 [ADB] No connected devices have been detected
+2023-06-28 07:15:22:904 [ADB] Could not find online devices
+2023-06-28 07:15:22:904 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:22:904 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:23:146 [ADB] Getting connected devices
+2023-06-28 07:15:23:189 [ADB] No connected devices have been detected
+2023-06-28 07:15:23:189 [ADB] Could not find online devices
+2023-06-28 07:15:23:189 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:23:189 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:23:441 [ADB] Getting connected devices
+2023-06-28 07:15:23:484 [ADB] No connected devices have been detected
+2023-06-28 07:15:23:484 [ADB] Could not find online devices
+2023-06-28 07:15:23:484 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:23:485 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:23:737 [ADB] Getting connected devices
+2023-06-28 07:15:23:777 [ADB] No connected devices have been detected
+2023-06-28 07:15:23:778 [ADB] Could not find online devices
+2023-06-28 07:15:23:778 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:23:778 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:24:031 [ADB] Getting connected devices
+2023-06-28 07:15:24:073 [ADB] No connected devices have been detected
+2023-06-28 07:15:24:073 [ADB] Could not find online devices
+2023-06-28 07:15:24:073 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:24:073 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:24:328 [ADB] Getting connected devices
+2023-06-28 07:15:24:372 [ADB] No connected devices have been detected
+2023-06-28 07:15:24:372 [ADB] Could not find online devices
+2023-06-28 07:15:24:372 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:24:372 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:24:626 [ADB] Getting connected devices
+2023-06-28 07:15:24:666 [ADB] No connected devices have been detected
+2023-06-28 07:15:24:666 [ADB] Could not find online devices
+2023-06-28 07:15:24:666 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:24:666 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:24:908 [ADB] Getting connected devices
+2023-06-28 07:15:24:948 [ADB] No connected devices have been detected
+2023-06-28 07:15:24:949 [ADB] Could not find online devices
+2023-06-28 07:15:24:949 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:24:949 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:25:207 [ADB] Getting connected devices
+2023-06-28 07:15:25:246 [ADB] No connected devices have been detected
+2023-06-28 07:15:25:246 [ADB] Could not find online devices
+2023-06-28 07:15:25:246 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:25:246 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:25:489 [ADB] Getting connected devices
+2023-06-28 07:15:25:528 [ADB] No connected devices have been detected
+2023-06-28 07:15:25:529 [ADB] Could not find online devices
+2023-06-28 07:15:25:529 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:25:529 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:25:769 [ADB] Getting connected devices
+2023-06-28 07:15:25:809 [ADB] No connected devices have been detected
+2023-06-28 07:15:25:809 [ADB] Could not find online devices
+2023-06-28 07:15:25:810 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:25:810 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:26:049 [ADB] Getting connected devices
+2023-06-28 07:15:26:086 [ADB] No connected devices have been detected
+2023-06-28 07:15:26:086 [ADB] Could not find online devices
+2023-06-28 07:15:26:086 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:26:086 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:26:330 [ADB] Getting connected devices
+2023-06-28 07:15:26:369 [ADB] No connected devices have been detected
+2023-06-28 07:15:26:370 [ADB] Could not find online devices
+2023-06-28 07:15:26:370 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:26:370 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:26:609 [ADB] Getting connected devices
+2023-06-28 07:15:26:650 [ADB] No connected devices have been detected
+2023-06-28 07:15:26:650 [ADB] Could not find online devices
+2023-06-28 07:15:26:650 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:26:650 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:26:906 [ADB] Getting connected devices
+2023-06-28 07:15:26:944 [ADB] No connected devices have been detected
+2023-06-28 07:15:26:944 [ADB] Could not find online devices
+2023-06-28 07:15:26:944 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:26:945 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:27:187 [ADB] Getting connected devices
+2023-06-28 07:15:27:227 [ADB] No connected devices have been detected
+2023-06-28 07:15:27:227 [ADB] Could not find online devices
+2023-06-28 07:15:27:227 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:27:227 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:27:482 [ADB] Getting connected devices
+2023-06-28 07:15:27:523 [ADB] No connected devices have been detected
+2023-06-28 07:15:27:523 [ADB] Could not find online devices
+2023-06-28 07:15:27:523 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:27:523 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:27:779 [ADB] Getting connected devices
+2023-06-28 07:15:27:819 [ADB] No connected devices have been detected
+2023-06-28 07:15:27:819 [ADB] Could not find online devices
+2023-06-28 07:15:27:820 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:27:820 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:28:076 [ADB] Getting connected devices
+2023-06-28 07:15:28:116 [ADB] No connected devices have been detected
+2023-06-28 07:15:28:116 [ADB] Could not find online devices
+2023-06-28 07:15:28:116 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:28:116 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:28:357 [ADB] Getting connected devices
+2023-06-28 07:15:28:402 [ADB] No connected devices have been detected
+2023-06-28 07:15:28:402 [ADB] Could not find online devices
+2023-06-28 07:15:28:403 [ADB] Reconnecting adb (target offline)
+2023-06-28 07:15:28:403 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 reconnect offline'
+2023-06-28 07:15:28:611 [HTTP] <-- POST /wd/hub/session - - ms - -
+2023-06-28 07:15:28:612 [HTTP] 
+2023-06-28 07:15:28:620 uncaughtException: EPIPE: broken pipe, write
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:61:25)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Socket.Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at Console.Writable.write (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:525:35)
+    at addChunk (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)
+2023-06-28 07:15:28:623 uncaughtException: EPIPE: broken pipe, write
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:61:25)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Socket.Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:51:25)
+    at Console._write (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at Console.Writable.write (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:525:35)
+    at addChunk (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)
+2023-06-28 07:15:28:625 uncaughtException: EPIPE: broken pipe, write
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:61:25)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Socket.Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:51:25)
+    at Console._write (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at Console.Writable.write (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:525:35)
+    at addChunk (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)
+2023-06-28 07:15:28:630 uncaughtException: EPIPE: broken pipe, write
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:61:25)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Socket.Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:51:25)
+    at Console._write (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at Console.Writable.write (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:525:35)
+    at addChunk (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)
+2023-06-28 07:15:28:633 uncaughtException: EPIPE: broken pipe, write
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:61:25)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Socket.Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:51:25)
+    at Console._write (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at Console.Writable.write (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:525:35)
+    at addChunk (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)

@@ -1,0 +1,62 @@
+2023-06-22 10:23:43:567 [Appium] Welcome to Appium v1.22.3
+2023-06-22 10:23:43:569 [Appium] Non-default server args:
+2023-06-22 10:23:43:569 [Appium]   port: 44367
+2023-06-22 10:23:43:569 [Appium]   sessionOverride: true
+2023-06-22 10:23:43:569 [Appium]   logFile: C:\Users\Rekha\eclipse-workspace\Torum-mobile-automation-master\Android_Pixel_3\Server1687429420661.log
+2023-06-22 10:23:43:598 [Appium] Appium REST http interface listener started on 0.0.0.0:44367
+2023-06-22 10:23:43:617 [HTTP] --> GET /wd/hub/status
+2023-06-22 10:23:43:618 [HTTP] {}
+2023-06-22 10:23:43:619 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2023-06-22 10:23:43:620 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.3"}}
+2023-06-22 10:23:43:626 [HTTP] <-- GET /wd/hub/status 200 6 ms - 68
+2023-06-22 10:23:43:627 [HTTP] 
+2023-06-22 10:23:43:631 [HTTP] --> GET /wd/hub/status
+2023-06-22 10:23:43:632 [HTTP] {}
+2023-06-22 10:23:43:632 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2023-06-22 10:23:43:633 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.3"}}
+2023-06-22 10:23:43:634 [HTTP] <-- GET /wd/hub/status 200 2 ms - 68
+2023-06-22 10:23:43:635 [HTTP] 
+2023-06-22 10:23:43:642 [HTTP] Request idempotency key: bae07014-a495-41dc-83bc-782f126f8d0c
+2023-06-22 10:23:43:654 [HTTP] --> POST /wd/hub/session
+2023-06-22 10:23:43:654 [HTTP] {"desiredCapabilities":{"appActivity":"com.torummobile.MainActivity","appPackage":"com.torummobile.dev","automationName":"UiAutomator2","chromeDriverPort":"11000","platformName":"Android","udid":"emulator-5554","deviceName":"Pixel_3","systemPort":"10000"},"capabilities":{"firstMatch":[{"appium:appActivity":"com.torummobile.MainActivity","appium:appPackage":"com.torummobile.dev","appium:automationName":"UiAutomator2","chromeDriverPort":"11000","appium:deviceName":"Pixel_3","platformName":"android","appium:systemPort":"10000","appium:udid":"emulator-5554"}]}}
+2023-06-22 10:23:43:654 [W3C] Calling AppiumDriver.createSession() with args: [{"appActivity":"com.torummobile.MainActivity","appPackage":"com.torummobile.dev","automationName":"UiAutomator2","chromeDriverPort":"11000","platformName":"Android","udid":"emulator-5554","deviceName":"Pixel_3","systemPort":"10000"},null,{"firstMatch":[{"appium:appActivity":"com.torummobile.MainActivity","appium:appPackage":"com.torummobile.dev","appium:automationName":"UiAutomator2","chromeDriverPort":"11000","appium:deviceName":"Pixel_3","platformName":"android","appium:systemPort":"10000","appium:udid":"emulator-5554"}]}]
+2023-06-22 10:23:43:655 [BaseDriver] Event 'newSessionRequested' logged at 1687429423655 (15:53:43 GMT+0530 (India Standard Time))
+2023-06-22 10:23:43:657 [BaseDriver] The following capabilities are not standard capabilities and should have an extension prefix:
+2023-06-22 10:23:43:657 [BaseDriver]   chromeDriverPort
+2023-06-22 10:23:43:869 [Appium] Appium v1.22.3 creating new AndroidUiautomator2Driver (v1.70.1) session
+2023-06-22 10:23:43:869 [Appium] There are no active sessions for cleanup
+2023-06-22 10:23:43:871 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2023-06-22 10:23:43:871 [BaseDriver] Creating session with W3C capabilities: {
+2023-06-22 10:23:43:871 [BaseDriver]   "alwaysMatch": {
+2023-06-22 10:23:43:871 [BaseDriver]     "appium:chromeDriverPort": "11000",
+2023-06-22 10:23:43:872 [BaseDriver]     "platformName": "android",
+2023-06-22 10:23:43:872 [BaseDriver]     "appium:appActivity": "com.torummobile.MainActivity",
+2023-06-22 10:23:43:872 [BaseDriver]     "appium:appPackage": "com.torummobile.dev",
+2023-06-22 10:23:43:872 [BaseDriver]     "appium:automationName": "UiAutomator2",
+2023-06-22 10:23:43:872 [BaseDriver]     "appium:deviceName": "Pixel_3",
+2023-06-22 10:23:43:872 [BaseDriver]     "appium:systemPort": "10000",
+2023-06-22 10:23:43:872 [BaseDriver]     "appium:udid": "emulator-5554"
+2023-06-22 10:23:43:872 [BaseDriver]   },
+2023-06-22 10:23:43:872 [BaseDriver]   "firstMatch": [
+2023-06-22 10:23:43:872 [BaseDriver]     {}
+2023-06-22 10:23:43:872 [BaseDriver]   ]
+2023-06-22 10:23:43:872 [BaseDriver] }
+2023-06-22 10:23:43:874 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2023-06-22 10:23:43:874 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2023-06-22 10:23:43:876 [BaseDriver] Capability 'systemPort' changed from string ('10000') to integer (10000). This may cause unexpected behavior
+2023-06-22 10:23:43:876 [BaseDriver] Capability 'chromeDriverPort' changed from string ('11000') to integer (11000). This may cause unexpected behavior
+2023-06-22 10:23:43:878 [BaseDriver] Session created with session id: 8e7ac0c8-6fdf-4d27-8d48-da7e1bc6b549
+2023-06-22 10:23:43:878 [UiAutomator2] Starting 'com.torummobile.dev' directly on the device
+2023-06-22 10:23:43:880 [UiAutomator2] Deleting UiAutomator2 session
+2023-06-22 10:23:43:881 [BaseDriver] Event 'newSessionStarted' logged at 1687429423881 (15:53:43 GMT+0530 (India Standard Time))
+2023-06-22 10:23:43:955 [W3C] Encountered internal error running command: Error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details
+2023-06-22 10:23:43:955 [W3C]     at requireSdkRoot (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\helpers.js:36:11)
+2023-06-22 10:23:43:955 [W3C]     at Function.createADB (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\adb.js:57:23)
+2023-06-22 10:23:43:955 [W3C]     at Object.createBaseADB (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-driver\lib\android-helpers.js:129:20)
+2023-06-22 10:23:43:955 [W3C]     at Object.getDeviceInfoFromCaps (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-driver\lib\android-helpers.js:214:29)
+2023-06-22 10:23:43:955 [W3C]     at AndroidUiautomator2Driver.startUiAutomator2Session (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:338:40)
+2023-06-22 10:23:43:955 [W3C]     at AndroidUiautomator2Driver.createSession (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:229:18)
+2023-06-22 10:23:43:955 [W3C]     at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-06-22 10:23:43:955 [W3C]     at AppiumDriver.createSession (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\lib\appium.js:387:35)
+2023-06-22 10:23:43:964 [HTTP] <-- POST /wd/hub/session 500 310 ms - 877
+2023-06-22 10:23:43:964 [HTTP] 

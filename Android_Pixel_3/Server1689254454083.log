@@ -1,0 +1,105 @@
+2023-07-13 13:21:03:397 [Appium] Welcome to Appium v1.22.3
+2023-07-13 13:21:03:413 [Appium] Non-default server args:
+2023-07-13 13:21:03:416 [Appium]   port: 30594
+2023-07-13 13:21:03:421 [Appium]   sessionOverride: true
+2023-07-13 13:21:03:430 [Appium]   logFile: C:\Users\Rekha\eclipse-workspace\Torum-mobile-automation-master\Android_Pixel_3\Server1689254454083.log
+2023-07-13 13:21:03:610 [Appium] Appium REST http interface listener started on 0.0.0.0:30594
+2023-07-13 13:21:03:734 [HTTP] --> GET /wd/hub/status
+2023-07-13 13:21:03:735 [HTTP] {}
+2023-07-13 13:21:03:739 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2023-07-13 13:21:03:744 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.3"}}
+2023-07-13 13:21:03:767 [HTTP] <-- GET /wd/hub/status 200 24 ms - 68
+2023-07-13 13:21:03:769 [HTTP] 
+2023-07-13 13:21:03:790 [HTTP] --> GET /wd/hub/status
+2023-07-13 13:21:03:791 [HTTP] {}
+2023-07-13 13:21:03:792 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2023-07-13 13:21:03:796 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.3"}}
+2023-07-13 13:21:03:800 [HTTP] <-- GET /wd/hub/status 200 8 ms - 68
+2023-07-13 13:21:03:800 [HTTP] 
+2023-07-13 13:21:05:523 [HTTP] Request idempotency key: 4ee143c4-baf0-4474-bf70-f0891fd68b8d
+2023-07-13 13:21:05:563 [HTTP] --> POST /wd/hub/session
+2023-07-13 13:21:05:564 [HTTP] {"desiredCapabilities":{"appActivity":"com.torum.app.MainActivity","appPackage":"com.torum.app.dev","automationName":"UiAutomator2","chromeDriverPort":"11000","platformName":"Android","udid":"emulator-5554","deviceName":"Pixel_3","systemPort":"10000"},"capabilities":{"firstMatch":[{"appium:appActivity":"com.torum.app.MainActivity","appium:appPackage":"com.torum.app.dev","appium:automationName":"UiAutomator2","chromeDriverPort":"11000","appium:deviceName":"Pixel_3","platformName":"android","appium:systemPort":"10000","appium:udid":"emulator-5554"}]}}
+2023-07-13 13:21:05:566 [W3C] Calling AppiumDriver.createSession() with args: [{"appActivity":"com.torum.app.MainActivity","appPackage":"com.torum.app.dev","automationName":"UiAutomator2","chromeDriverPort":"11000","platformName":"Android","udid":"emulator-5554","deviceName":"Pixel_3","systemPort":"10000"},null,{"firstMatch":[{"appium:appActivity":"com.torum.app.MainActivity","appium:appPackage":"com.torum.app.dev","appium:automationName":"UiAutomator2","chromeDriverPort":"11000","appium:deviceName":"Pixel_3","platformName":"android","appium:systemPort":"10000","appium:udid":"emulator-5554"}]}]
+2023-07-13 13:21:05:568 [BaseDriver] Event 'newSessionRequested' logged at 1689254465567 (18:51:05 GMT+0530 (India Standard Time))
+2023-07-13 13:21:05:579 [BaseDriver] The following capabilities are not standard capabilities and should have an extension prefix:
+2023-07-13 13:21:05:579 [BaseDriver]   chromeDriverPort
+2023-07-13 13:21:06:545 [Appium] Appium v1.22.3 creating new AndroidUiautomator2Driver (v1.70.1) session
+2023-07-13 13:21:06:546 [Appium] There are no active sessions for cleanup
+2023-07-13 13:21:06:555 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2023-07-13 13:21:06:556 [BaseDriver] Creating session with W3C capabilities: {
+2023-07-13 13:21:06:557 [BaseDriver]   "alwaysMatch": {
+2023-07-13 13:21:06:557 [BaseDriver]     "appium:chromeDriverPort": "11000",
+2023-07-13 13:21:06:558 [BaseDriver]     "platformName": "android",
+2023-07-13 13:21:06:558 [BaseDriver]     "appium:appActivity": "com.torum.app.MainActivity",
+2023-07-13 13:21:06:558 [BaseDriver]     "appium:appPackage": "com.torum.app.dev",
+2023-07-13 13:21:06:559 [BaseDriver]     "appium:automationName": "UiAutomator2",
+2023-07-13 13:21:06:559 [BaseDriver]     "appium:deviceName": "Pixel_3",
+2023-07-13 13:21:06:559 [BaseDriver]     "appium:systemPort": "10000",
+2023-07-13 13:21:06:560 [BaseDriver]     "appium:udid": "emulator-5554"
+2023-07-13 13:21:06:561 [BaseDriver]   },
+2023-07-13 13:21:06:561 [BaseDriver]   "firstMatch": [
+2023-07-13 13:21:06:562 [BaseDriver]     {}
+2023-07-13 13:21:06:562 [BaseDriver]   ]
+2023-07-13 13:21:06:563 [BaseDriver] }
+2023-07-13 13:21:06:572 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2023-07-13 13:21:06:573 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2023-07-13 13:21:06:583 [BaseDriver] Capability 'systemPort' changed from string ('10000') to integer (10000). This may cause unexpected behavior
+2023-07-13 13:21:06:584 [BaseDriver] Capability 'chromeDriverPort' changed from string ('11000') to integer (11000). This may cause unexpected behavior
+2023-07-13 13:21:06:592 [BaseDriver] Session created with session id: ed865cf8-9089-4578-92f7-31740a1c504b
+2023-07-13 13:21:06:594 [UiAutomator2] Starting 'com.torum.app.dev' directly on the device
+2023-07-13 13:21:06:659 [ADB] Found 2 'build-tools' folders under 'C:\Users\Rekha\AppData\Local\Android\Sdk' (newest first):
+2023-07-13 13:21:06:659 [ADB]     C:/Users/Rekha/AppData/Local/Android/Sdk/build-tools/34.0.0
+2023-07-13 13:21:06:659 [ADB]     C:/Users/Rekha/AppData/Local/Android/Sdk/build-tools/30.0.3
+2023-07-13 13:21:06:661 [ADB] Using 'adb.exe' from 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2023-07-13 13:21:06:662 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2023-07-13 13:21:06:741 [AndroidDriver] Retrieving device list
+2023-07-13 13:21:06:742 [ADB] Trying to find a connected android device
+2023-07-13 13:21:06:743 [ADB] Getting connected devices
+2023-07-13 13:21:06:818 [ADB] Connected devices: [{"udid":"ZD2226MYVB","state":"device"},{"udid":"emulator-5554","state":"device"}]
+2023-07-13 13:21:06:820 [AndroidDriver] Using device: emulator-5554
+2023-07-13 13:21:06:823 [ADB] Using 'adb.exe' from 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2023-07-13 13:21:06:823 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2023-07-13 13:21:06:892 [ADB] Setting device id to emulator-5554
+2023-07-13 13:21:06:893 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2023-07-13 13:21:07:067 [ADB] Current device property 'ro.build.version.sdk': 34
+2023-07-13 13:21:07:069 [ADB] Getting device platform version
+2023-07-13 13:21:07:070 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2023-07-13 13:21:07:215 [ADB] Current device property 'ro.build.version.release': 14
+2023-07-13 13:21:07:216 [ADB] Device API level: 34
+2023-07-13 13:21:07:216 [UiAutomator2] Relaxing hidden api policy
+2023-07-13 13:21:07:217 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2023-07-13 13:21:07:644 [AndroidDriver] No app sent in, not parsing package/activity
+2023-07-13 13:21:07:645 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 wait-for-device'
+2023-07-13 13:21:07:696 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell echo ping'
+2023-07-13 13:21:07:800 [AndroidDriver] Pushing settings apk to device...
+2023-07-13 13:21:07:802 [ADB] Getting install status for io.appium.settings
+2023-07-13 13:21:07:803 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2023-07-13 13:21:08:225 [ADB] 'io.appium.settings' is installed
+2023-07-13 13:21:08:226 [ADB] Getting package info for 'io.appium.settings'
+2023-07-13 13:21:08:226 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2023-07-13 13:21:08:825 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('3.4.0' >= '3.4.0')
+2023-07-13 13:21:08:826 [ADB] There is no need to install/upgrade 'C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+2023-07-13 13:21:08:827 [ADB] Getting IDs of all 'io.appium.settings' processes
+2023-07-13 13:21:08:828 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell 'pgrep --help; echo $?''
+2023-07-13 13:21:08:986 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+2023-07-13 13:21:09:157 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2023-07-13 13:21:09:159 [Logcat] Starting logs capture with command: C:\\Users\\Rekha\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 logcat -v threadtime
+2023-07-13 13:21:09:325 [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to local port 10000
+2023-07-13 13:21:09:332 [UiAutomator2] UiAutomator2 Server cannot start because the local port #10000 is busy. Make sure the port you provide via 'systemPort' capability is not occupied. This situation might often be a result of an inaccurate sessions management, e.g. old automation sessions on the same device must always be closed before starting new ones.
+2023-07-13 13:21:09:333 [UiAutomator2] Deleting UiAutomator2 session
+2023-07-13 13:21:09:335 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop com.torum.app.dev'
+2023-07-13 13:21:09:665 [Logcat] Stopping logcat capture
+2023-07-13 13:21:09:674 [ADB] Removing forwarded port socket connection: 10000 
+2023-07-13 13:21:09:675 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:10000'
+2023-07-13 13:21:09:740 [UiAutomator2] Restoring hidden api policy to the device default configuration
+2023-07-13 13:21:09:741 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2023-07-13 13:21:10:119 [BaseDriver] Event 'newSessionStarted' logged at 1689254470118 (18:51:10 GMT+0530 (India Standard Time))
+2023-07-13 13:21:10:408 [W3C] Encountered internal error running command: Error: UiAutomator2 Server cannot start because the local port #10000 is busy. Make sure the port you provide via 'systemPort' capability is not occupied. This situation might often be a result of an inaccurate sessions management, e.g. old automation sessions on the same device must always be closed before starting new ones.
+2023-07-13 13:21:10:408 [W3C]     at Object.errorAndThrow (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-support\lib\logging.js:94:35)
+2023-07-13 13:21:10:409 [W3C]     at forwardPort (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:284:16)
+2023-07-13 13:21:10:409 [W3C]     at AndroidUiautomator2Driver.allocateSystemPort (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:294:14)
+2023-07-13 13:21:10:409 [W3C]     at AndroidUiautomator2Driver.startUiAutomator2Session (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:383:5)
+2023-07-13 13:21:10:410 [W3C]     at AndroidUiautomator2Driver.createSession (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:229:7)
+2023-07-13 13:21:10:410 [W3C]     at AppiumDriver.createSession (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\lib\appium.js:387:35)
+2023-07-13 13:21:10:477 [HTTP] <-- POST /wd/hub/session 500 4910 ms - 1201
+2023-07-13 13:21:10:477 [HTTP] 

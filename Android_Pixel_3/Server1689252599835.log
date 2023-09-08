@@ -1,0 +1,69 @@
+2023-07-13 12:50:05:352 [Appium] Welcome to Appium v1.22.3
+2023-07-13 12:50:05:354 [Appium] Non-default server args:
+2023-07-13 12:50:05:355 [Appium]   port: 17595
+2023-07-13 12:50:05:356 [Appium]   sessionOverride: true
+2023-07-13 12:50:05:357 [Appium]   logFile: C:\Users\Rekha\eclipse-workspace\Torum-mobile-automation-master\Android_Pixel_3\Server1689252599835.log
+2023-07-13 12:50:05:425 [Appium] Appium REST http interface listener started on 0.0.0.0:17595
+2023-07-13 12:50:05:745 [HTTP] --> GET /wd/hub/status
+2023-07-13 12:50:05:746 [HTTP] {}
+2023-07-13 12:50:05:750 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2023-07-13 12:50:05:753 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.3"}}
+2023-07-13 12:50:05:768 [HTTP] <-- GET /wd/hub/status 200 16 ms - 68
+2023-07-13 12:50:05:769 [HTTP] 
+2023-07-13 12:50:05:781 [HTTP] --> GET /wd/hub/status
+2023-07-13 12:50:05:782 [HTTP] {}
+2023-07-13 12:50:05:783 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2023-07-13 12:50:05:785 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.3"}}
+2023-07-13 12:50:05:788 [HTTP] <-- GET /wd/hub/status 200 5 ms - 68
+2023-07-13 12:50:05:789 [HTTP] 
+2023-07-13 12:50:05:816 [HTTP] Request idempotency key: 3dc55332-184f-41ee-bfab-db4972242d69
+2023-07-13 12:50:05:856 [HTTP] --> POST /wd/hub/session
+2023-07-13 12:50:05:857 [HTTP] {"desiredCapabilities":{"appActivity":"com.torummobile.MainActivity","appPackage":"com.torummobile.dev","automationName":"UiAutomator2","chromeDriverPort":"11000","platformName":"Android","udid":"emulator-5554","deviceName":"Pixel_3","systemPort":"10000"},"capabilities":{"firstMatch":[{"appium:appActivity":"com.torummobile.MainActivity","appium:appPackage":"com.torummobile.dev","appium:automationName":"UiAutomator2","chromeDriverPort":"11000","appium:deviceName":"Pixel_3","platformName":"android","appium:systemPort":"10000","appium:udid":"emulator-5554"}]}}
+2023-07-13 12:50:05:858 [W3C] Calling AppiumDriver.createSession() with args: [{"appActivity":"com.torummobile.MainActivity","appPackage":"com.torummobile.dev","automationName":"UiAutomator2","chromeDriverPort":"11000","platformName":"Android","udid":"emulator-5554","deviceName":"Pixel_3","systemPort":"10000"},null,{"firstMatch":[{"appium:appActivity":"com.torummobile.MainActivity","appium:appPackage":"com.torummobile.dev","appium:automationName":"UiAutomator2","chromeDriverPort":"11000","appium:deviceName":"Pixel_3","platformName":"android","appium:systemPort":"10000","appium:udid":"emulator-5554"}]}]
+2023-07-13 12:50:05:860 [BaseDriver] Event 'newSessionRequested' logged at 1689252605859 (18:20:05 GMT+0530 (India Standard Time))
+2023-07-13 12:50:05:867 [BaseDriver] The following capabilities are not standard capabilities and should have an extension prefix:
+2023-07-13 12:50:05:867 [BaseDriver]   chromeDriverPort
+2023-07-13 12:50:06:466 [Appium] Appium v1.22.3 creating new AndroidUiautomator2Driver (v1.70.1) session
+2023-07-13 12:50:06:467 [Appium] There are no active sessions for cleanup
+2023-07-13 12:50:06:473 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2023-07-13 12:50:06:474 [BaseDriver] Creating session with W3C capabilities: {
+2023-07-13 12:50:06:474 [BaseDriver]   "alwaysMatch": {
+2023-07-13 12:50:06:474 [BaseDriver]     "appium:chromeDriverPort": "11000",
+2023-07-13 12:50:06:474 [BaseDriver]     "platformName": "android",
+2023-07-13 12:50:06:475 [BaseDriver]     "appium:appActivity": "com.torummobile.MainActivity",
+2023-07-13 12:50:06:475 [BaseDriver]     "appium:appPackage": "com.torummobile.dev",
+2023-07-13 12:50:06:475 [BaseDriver]     "appium:automationName": "UiAutomator2",
+2023-07-13 12:50:06:475 [BaseDriver]     "appium:deviceName": "Pixel_3",
+2023-07-13 12:50:06:475 [BaseDriver]     "appium:systemPort": "10000",
+2023-07-13 12:50:06:476 [BaseDriver]     "appium:udid": "emulator-5554"
+2023-07-13 12:50:06:476 [BaseDriver]   },
+2023-07-13 12:50:06:476 [BaseDriver]   "firstMatch": [
+2023-07-13 12:50:06:476 [BaseDriver]     {}
+2023-07-13 12:50:06:477 [BaseDriver]   ]
+2023-07-13 12:50:06:477 [BaseDriver] }
+2023-07-13 12:50:06:480 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2023-07-13 12:50:06:481 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2023-07-13 12:50:06:486 [BaseDriver] Capability 'systemPort' changed from string ('10000') to integer (10000). This may cause unexpected behavior
+2023-07-13 12:50:06:486 [BaseDriver] Capability 'chromeDriverPort' changed from string ('11000') to integer (11000). This may cause unexpected behavior
+2023-07-13 12:50:06:490 [BaseDriver] Session created with session id: 82963e71-3572-4fa9-98b4-cfb9a703a6d5
+2023-07-13 12:50:06:491 [UiAutomator2] Starting 'com.torummobile.dev' directly on the device
+2023-07-13 12:50:06:541 [ADB] Found 2 'build-tools' folders under 'C:\Users\Rekha\AppData\Local\Android\Sdk' (newest first):
+2023-07-13 12:50:06:541 [ADB]     C:/Users/Rekha/AppData/Local/Android/Sdk/build-tools/34.0.0
+2023-07-13 12:50:06:541 [ADB]     C:/Users/Rekha/AppData/Local/Android/Sdk/build-tools/30.0.3
+2023-07-13 12:50:06:543 [ADB] Using 'adb.exe' from 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2023-07-13 12:50:06:544 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2023-07-13 12:50:06:602 [AndroidDriver] Retrieving device list
+2023-07-13 12:50:06:605 [ADB] Trying to find a connected android device
+2023-07-13 12:50:06:607 [ADB] Getting connected devices
+2023-07-13 12:50:06:653 [ADB] Connected devices: [{"udid":"ZD2226MYVB","state":"device"}]
+2023-07-13 12:50:06:654 [AndroidDriver] Device emulator-5554 was not in the list of connected devices
+2023-07-13 12:50:06:655 [UiAutomator2] Deleting UiAutomator2 session
+2023-07-13 12:50:06:657 [BaseDriver] Event 'newSessionStarted' logged at 1689252606657 (18:20:06 GMT+0530 (India Standard Time))
+2023-07-13 12:50:06:817 [W3C] Encountered internal error running command: Error: Device emulator-5554 was not in the list of connected devices
+2023-07-13 12:50:06:817 [W3C]     at Object.errorAndThrow (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-support\lib\logging.js:94:35)
+2023-07-13 12:50:06:817 [W3C]     at Object.getDeviceInfoFromCaps (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-driver\lib\android-helpers.js:231:16)
+2023-07-13 12:50:06:817 [W3C]     at AndroidUiautomator2Driver.startUiAutomator2Session (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:338:26)
+2023-07-13 12:50:06:817 [W3C]     at AndroidUiautomator2Driver.createSession (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:229:7)
+2023-07-13 12:50:06:818 [W3C]     at AppiumDriver.createSession (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\lib\appium.js:387:35)
+2023-07-13 12:50:06:837 [HTTP] <-- POST /wd/hub/session 500 979 ms - 683
+2023-07-13 12:50:06:838 [HTTP] 

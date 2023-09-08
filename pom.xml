@@ -1,0 +1,104 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.torum</groupId>
+	<artifactId>mobile-automation</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<cucumber-java.version>7.13.0</cucumber-java.version>
+		<cucumber-testng.version>7.13.0</cucumber-testng.version>
+		<cucumber-reporting.version>5.7.5</cucumber-reporting.version>
+		<maven.surefire.version>3.0.0-M7</maven.surefire.version>
+		<maven.compiler.plugin>3.11.0</maven.compiler.plugin>
+		<java.version>20.0.1</java.version>
+		<java-client.version>8.5.1</java-client.version>
+		<java.faker.version>1.0.2</java.faker.version>
+		<!-- DEFAULT - If you do not pass any value with mvn test, then, this value (testng_simulator_iPhone13.xml)
+			will be used -->
+		<!--<suiteFile>testng.xml</suiteFile>-->
+<!--		<suiteFile>testng_simulator_iPhone13</suiteFile>-->
+	<suiteFile>testng_emulator_pixel_3</suiteFile>
+
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven.compiler.plugin}</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<source>3.11.0</source>
+					<target>3.11.0</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>${maven.surefire.version}</version>
+				<configuration>
+					<includes>
+						<include>**/CucumberRunner.java</include>
+					</includes>
+					<!-- Suite testng xml file to consider for test execution -->
+					<suiteXmlFiles>
+						<!-- <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile> -->
+						<!-- <suiteXmlFile>testng.xml</suiteXmlFile> -->
+						<!--<suiteXmlFile>${suiteFile}</suiteXmlFile>-->
+<!--						<suiteXmlFile>src/test/resources/${suiteFile}.xml</suiteXmlFile>-->
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>com.github.javafaker</groupId>
+			<artifactId>javafaker</artifactId>
+			<version>${java.faker.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${cucumber-java.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>${cucumber-testng.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>${java-client.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20211205</version>
+
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.14.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.14.0</version>
+		</dependency>
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>maven-cucumber-reporting</artifactId>
+			<version>${cucumber-reporting.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.15</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/net.masterthought/maven-cucumber-reporting -->
+
+	</dependencies>
+</project>

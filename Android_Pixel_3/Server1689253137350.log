@@ -1,0 +1,148 @@
+2023-07-13 12:59:08:122 [Appium] Welcome to Appium v1.22.3
+2023-07-13 12:59:08:131 [Appium] Non-default server args:
+2023-07-13 12:59:08:134 [Appium]   port: 63515
+2023-07-13 12:59:08:135 [Appium]   sessionOverride: true
+2023-07-13 12:59:08:137 [Appium]   logFile: C:\Users\Rekha\eclipse-workspace\Torum-mobile-automation-master\Android_Pixel_3\Server1689253137350.log
+2023-07-13 12:59:08:302 [Appium] Appium REST http interface listener started on 0.0.0.0:63515
+2023-07-13 12:59:08:554 [HTTP] --> GET /wd/hub/status
+2023-07-13 12:59:08:556 [HTTP] {}
+2023-07-13 12:59:08:561 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2023-07-13 12:59:08:565 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.3"}}
+2023-07-13 12:59:08:587 [HTTP] <-- GET /wd/hub/status 200 25 ms - 68
+2023-07-13 12:59:08:588 [HTTP] 
+2023-07-13 12:59:08:609 [HTTP] --> GET /wd/hub/status
+2023-07-13 12:59:08:612 [HTTP] {}
+2023-07-13 12:59:08:613 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2023-07-13 12:59:08:619 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.3"}}
+2023-07-13 12:59:08:624 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2023-07-13 12:59:08:626 [HTTP] 
+2023-07-13 12:59:08:661 [HTTP] Request idempotency key: ad5e264c-e8f2-4c2a-94f5-ff2fa9937e64
+2023-07-13 12:59:08:711 [HTTP] --> POST /wd/hub/session
+2023-07-13 12:59:08:712 [HTTP] {"desiredCapabilities":{"appActivity":"com.torummobile.MainActivity","appPackage":"com.torummobile.dev","automationName":"UiAutomator2","chromeDriverPort":"11000","platformName":"Android","udid":"emulator-5554","deviceName":"Pixel_3","systemPort":"10000"},"capabilities":{"firstMatch":[{"appium:appActivity":"com.torummobile.MainActivity","appium:appPackage":"com.torummobile.dev","appium:automationName":"UiAutomator2","chromeDriverPort":"11000","appium:deviceName":"Pixel_3","platformName":"android","appium:systemPort":"10000","appium:udid":"emulator-5554"}]}}
+2023-07-13 12:59:08:714 [W3C] Calling AppiumDriver.createSession() with args: [{"appActivity":"com.torummobile.MainActivity","appPackage":"com.torummobile.dev","automationName":"UiAutomator2","chromeDriverPort":"11000","platformName":"Android","udid":"emulator-5554","deviceName":"Pixel_3","systemPort":"10000"},null,{"firstMatch":[{"appium:appActivity":"com.torummobile.MainActivity","appium:appPackage":"com.torummobile.dev","appium:automationName":"UiAutomator2","chromeDriverPort":"11000","appium:deviceName":"Pixel_3","platformName":"android","appium:systemPort":"10000","appium:udid":"emulator-5554"}]}]
+2023-07-13 12:59:08:715 [BaseDriver] Event 'newSessionRequested' logged at 1689253148715 (18:29:08 GMT+0530 (India Standard Time))
+2023-07-13 12:59:08:724 [BaseDriver] The following capabilities are not standard capabilities and should have an extension prefix:
+2023-07-13 12:59:08:725 [BaseDriver]   chromeDriverPort
+2023-07-13 12:59:09:751 [Appium] Appium v1.22.3 creating new AndroidUiautomator2Driver (v1.70.1) session
+2023-07-13 12:59:09:752 [Appium] There are no active sessions for cleanup
+2023-07-13 12:59:09:764 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2023-07-13 12:59:09:765 [BaseDriver] Creating session with W3C capabilities: {
+2023-07-13 12:59:09:765 [BaseDriver]   "alwaysMatch": {
+2023-07-13 12:59:09:766 [BaseDriver]     "appium:chromeDriverPort": "11000",
+2023-07-13 12:59:09:766 [BaseDriver]     "platformName": "android",
+2023-07-13 12:59:09:767 [BaseDriver]     "appium:appActivity": "com.torummobile.MainActivity",
+2023-07-13 12:59:09:767 [BaseDriver]     "appium:appPackage": "com.torummobile.dev",
+2023-07-13 12:59:09:767 [BaseDriver]     "appium:automationName": "UiAutomator2",
+2023-07-13 12:59:09:767 [BaseDriver]     "appium:deviceName": "Pixel_3",
+2023-07-13 12:59:09:768 [BaseDriver]     "appium:systemPort": "10000",
+2023-07-13 12:59:09:768 [BaseDriver]     "appium:udid": "emulator-5554"
+2023-07-13 12:59:09:769 [BaseDriver]   },
+2023-07-13 12:59:09:772 [BaseDriver]   "firstMatch": [
+2023-07-13 12:59:09:772 [BaseDriver]     {}
+2023-07-13 12:59:09:773 [BaseDriver]   ]
+2023-07-13 12:59:09:774 [BaseDriver] }
+2023-07-13 12:59:09:780 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2023-07-13 12:59:09:781 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2023-07-13 12:59:09:792 [BaseDriver] Capability 'systemPort' changed from string ('10000') to integer (10000). This may cause unexpected behavior
+2023-07-13 12:59:09:792 [BaseDriver] Capability 'chromeDriverPort' changed from string ('11000') to integer (11000). This may cause unexpected behavior
+2023-07-13 12:59:09:800 [BaseDriver] Session created with session id: 9dbd7276-6bd5-4faa-9b3b-beabb9fb42f5
+2023-07-13 12:59:09:803 [UiAutomator2] Starting 'com.torummobile.dev' directly on the device
+2023-07-13 12:59:09:894 [ADB] Found 2 'build-tools' folders under 'C:\Users\Rekha\AppData\Local\Android\Sdk' (newest first):
+2023-07-13 12:59:09:894 [ADB]     C:/Users/Rekha/AppData/Local/Android/Sdk/build-tools/34.0.0
+2023-07-13 12:59:09:895 [ADB]     C:/Users/Rekha/AppData/Local/Android/Sdk/build-tools/30.0.3
+2023-07-13 12:59:09:898 [ADB] Using 'adb.exe' from 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2023-07-13 12:59:09:901 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2023-07-13 12:59:09:983 [AndroidDriver] Retrieving device list
+2023-07-13 12:59:09:984 [ADB] Trying to find a connected android device
+2023-07-13 12:59:09:986 [ADB] Getting connected devices
+2023-07-13 12:59:10:059 [ADB] Connected devices: [{"udid":"ZD2226MYVB","state":"device"},{"udid":"emulator-5554","state":"device"}]
+2023-07-13 12:59:10:060 [AndroidDriver] Using device: emulator-5554
+2023-07-13 12:59:10:064 [ADB] Using 'adb.exe' from 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2023-07-13 12:59:10:064 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2023-07-13 12:59:10:131 [ADB] Setting device id to emulator-5554
+2023-07-13 12:59:10:132 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2023-07-13 12:59:10:309 [ADB] Current device property 'ro.build.version.sdk': 34
+2023-07-13 12:59:10:309 [ADB] Getting device platform version
+2023-07-13 12:59:10:310 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2023-07-13 12:59:10:458 [ADB] Current device property 'ro.build.version.release': 14
+2023-07-13 12:59:10:459 [ADB] Device API level: 34
+2023-07-13 12:59:10:459 [UiAutomator2] Relaxing hidden api policy
+2023-07-13 12:59:10:460 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2023-07-13 12:59:10:963 [AndroidDriver] No app sent in, not parsing package/activity
+2023-07-13 12:59:10:965 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 wait-for-device'
+2023-07-13 12:59:11:033 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell echo ping'
+2023-07-13 12:59:11:182 [AndroidDriver] Pushing settings apk to device...
+2023-07-13 12:59:11:185 [ADB] Getting install status for io.appium.settings
+2023-07-13 12:59:11:185 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2023-07-13 12:59:11:715 [ADB] 'io.appium.settings' is installed
+2023-07-13 12:59:11:716 [ADB] Getting package info for 'io.appium.settings'
+2023-07-13 12:59:11:716 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2023-07-13 12:59:12:065 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('3.4.0' >= '3.4.0')
+2023-07-13 12:59:12:066 [ADB] There is no need to install/upgrade 'C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+2023-07-13 12:59:12:067 [ADB] Getting IDs of all 'io.appium.settings' processes
+2023-07-13 12:59:12:068 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell 'pgrep --help; echo $?''
+2023-07-13 12:59:12:222 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+2023-07-13 12:59:12:558 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2023-07-13 12:59:12:560 [Logcat] Starting logs capture with command: C:\\Users\\Rekha\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 logcat -v threadtime
+2023-07-13 12:59:13:285 [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to local port 10000
+2023-07-13 12:59:13:294 [ADB] Forwarding system: 10000 to device: 6790
+2023-07-13 12:59:13:294 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 forward tcp:10000 tcp:6790'
+2023-07-13 12:59:13:385 [ADB] Getting install status for io.appium.uiautomator2.server
+2023-07-13 12:59:13:386 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2023-07-13 12:59:13:651 [ADB] 'io.appium.uiautomator2.server' is installed
+2023-07-13 12:59:13:651 [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2023-07-13 12:59:13:652 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2023-07-13 12:59:14:517 [ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('4.27.0' >= '4.27.0')
+2023-07-13 12:59:14:518 [UiAutomator2] io.appium.uiautomator2.server installation state: sameVersionInstalled
+2023-07-13 12:59:14:519 [ADB] Checking app cert for C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.27.0.apk
+2023-07-13 12:59:14:625 [ADB] Using 'apksigner.jar' from 'C:\Users\Rekha\AppData\Local\Android\Sdk\build-tools\34.0.0\lib\apksigner.jar'
+2023-07-13 12:59:14:628 [ADB] Starting apksigner: 'C:\\Program Files\\Java\\jdk-20\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\Rekha\\AppData\\Local\\Android\\Sdk\\build-tools\\34.0.0\\lib\\apksigner.jar verify --print-certs C:\\Users\\Rekha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v4.27.0.apk
+2023-07-13 12:59:17:790 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2023-07-13 12:59:17:790 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2023-07-13 12:59:17:790 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2023-07-13 12:59:17:790 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2023-07-13 12:59:17:791 [ADB] 
+2023-07-13 12:59:17:792 [ADB] sha256 hash did match for 'appium-uiautomator2-server-v4.27.0.apk'
+2023-07-13 12:59:17:792 [ADB] 'C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.27.0.apk' is signed with the default certificate
+2023-07-13 12:59:17:792 [ADB] Getting install status for io.appium.uiautomator2.server.test
+2023-07-13 12:59:17:793 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server.test'
+2023-07-13 12:59:18:053 [ADB] 'io.appium.uiautomator2.server.test' is installed
+2023-07-13 12:59:18:053 [ADB] Checking app cert for C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk
+2023-07-13 12:59:18:062 [ADB] Starting apksigner: 'C:\\Program Files\\Java\\jdk-20\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\Rekha\\AppData\\Local\\Android\\Sdk\\build-tools\\34.0.0\\lib\\apksigner.jar verify --print-certs C:\\Users\\Rekha\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk
+2023-07-13 12:59:19:245 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2023-07-13 12:59:19:245 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2023-07-13 12:59:19:245 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2023-07-13 12:59:19:246 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2023-07-13 12:59:19:246 [ADB] 
+2023-07-13 12:59:19:246 [ADB] sha256 hash did match for 'appium-uiautomator2-server-debug-androidTest.apk'
+2023-07-13 12:59:19:246 [ADB] 'C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+2023-07-13 12:59:19:247 [UiAutomator2] Server packages are not going to be (re)installed
+2023-07-13 12:59:19:252 [UiAutomator2] Waiting up to 30000ms for services to be available
+2023-07-13 12:59:19:254 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm list instrumentation'
+2023-07-13 12:59:19:486 [UiAutomator2] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2023-07-13 12:59:19:492 [ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2023-07-13 12:59:19:493 [ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+2023-07-13 12:59:19:494 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+2023-07-13 12:59:20:060 [UiAutomator2] No app capability. Assuming it is already on the device
+2023-07-13 12:59:20:061 [ADB] Getting install status for com.torummobile.dev
+2023-07-13 12:59:20:062 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package com.torummobile.dev'
+2023-07-13 12:59:20:278 [ADB] 'com.torummobile.dev' is not installed
+2023-07-13 12:59:20:279 [UiAutomator2] Deleting UiAutomator2 session
+2023-07-13 12:59:20:281 [UiAutomator2] Deleting UiAutomator2 server session
+2023-07-13 12:59:20:284 [WD Proxy] Matched '/' to command name 'deleteSession'
+2023-07-13 12:59:20:288 [UiAutomator2] Did not get confirmation UiAutomator2 deleteSession worked; Error was: UnknownError: An unknown server-side error occurred while processing the command. Original error: Trying to proxy a session command without session id
+2023-07-13 12:59:20:289 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop com.torummobile.dev'
+2023-07-13 12:59:20:749 [Logcat] Stopping logcat capture
+2023-07-13 12:59:20:762 [ADB] Removing forwarded port socket connection: 10000 
+2023-07-13 12:59:20:763 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:10000'
+2023-07-13 12:59:20:828 [UiAutomator2] Restoring hidden api policy to the device default configuration
+2023-07-13 12:59:20:828 [ADB] Running 'C:\Users\Rekha\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2023-07-13 12:59:21:847 [BaseDriver] Event 'newSessionStarted' logged at 1689253161847 (18:29:21 GMT+0530 (India Standard Time))
+2023-07-13 12:59:22:089 [W3C] Encountered internal error running command: Error: 'app' option is required for reinstall
+2023-07-13 12:59:22:090 [W3C]     at Object.resetApp (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-driver\lib\android-helpers.js:405:11)
+2023-07-13 12:59:22:090 [W3C]     at AndroidUiautomator2Driver.initAUT (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:546:9)
+2023-07-13 12:59:22:090 [W3C]     at AndroidUiautomator2Driver.startUiAutomator2Session (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:408:5)
+2023-07-13 12:59:22:091 [W3C]     at AndroidUiautomator2Driver.createSession (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:229:7)
+2023-07-13 12:59:22:091 [W3C]     at AppiumDriver.createSession (C:\Users\Rekha\AppData\Roaming\npm\node_modules\appium\lib\appium.js:387:35)
+2023-07-13 12:59:22:131 [HTTP] <-- POST /wd/hub/session 500 13416 ms - 637
+2023-07-13 12:59:22:132 [HTTP] 

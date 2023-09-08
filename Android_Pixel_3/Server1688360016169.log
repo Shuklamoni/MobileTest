@@ -1,0 +1,6 @@
+2023-07-03 04:53:41:035 [Appium] Welcome to Appium v1.22.3
+2023-07-03 04:53:41:037 [Appium] Non-default server args:
+2023-07-03 04:53:41:038 [Appium]   port: 29678
+2023-07-03 04:53:41:039 [Appium]   sessionOverride: true
+2023-07-03 04:53:41:039 [Appium]   logFile: C:\Users\Rekha\eclipse-workspace\Torum-mobile-automation-master\Android_Pixel_3\Server1688360016169.log
+2023-07-03 04:53:41:097 [Appium] Appium REST http interface listener started on 0.0.0.0:29678
