@@ -5,7 +5,7 @@ Feature: Login to Torum through different credentials
 
   @valid_scenario
   Scenario: As a user, I should be redirected to the login screen with the phone number option by default when clicking on the Log in button near 'Already landed?' on the welcome screen
-    Given User is on "Welcome Screen"
+    Given User is on Welcome Screen
     When User taps on "Log In" button
     Then "Phone Number" textbox should display
 

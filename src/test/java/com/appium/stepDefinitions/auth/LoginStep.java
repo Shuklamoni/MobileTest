@@ -2,8 +2,10 @@ package com.appium.stepDefinitions.auth;
 
 import com.appium.constants.TestContextConstants;
 import com.appium.pages.AuthPage;
+import com.appium.pages.WelcomePage;
 import io.cucumber.java.en.And;
 
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -12,6 +14,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.AssertJUnit.assertTrue;
 
 public class LoginStep {
+    /*
     AuthPage authPage = new AuthPage();
 
     @When("User click on {string}")
@@ -43,4 +46,21 @@ public class LoginStep {
 //    public void userIsPresentedWithTheToastMessage(String message) {
 //        assertTrue(authPage.iselementContainsTextDisplayed(message));
 //    }
+
+    */
+
+
+    @Given("User is on Welcome Screen")
+    public void userIsOnWelcomeScreen(String text) {
+        assertTrue(WelcomePage);
+    }
+
+    @Then("{string} textbox should display")
+    public void textboxShouldDisplay(String arg0) {
+    }
+
+    @When("User taps on {string} button")
+    public void userTapsOnButton(String arg0) {
+        WelcomePage.selectLogIn();
+    }
 }

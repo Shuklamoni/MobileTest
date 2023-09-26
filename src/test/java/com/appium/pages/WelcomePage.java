@@ -21,6 +21,9 @@ public class WelcomePage extends BasePage {
         this.clickOnButtonInText(option);
     }
 
+    public boolean isWelcomeScreen(MobileElment elementName,int time){
 
+
+    }
 
 }
