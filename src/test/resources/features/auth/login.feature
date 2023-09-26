@@ -7,7 +7,6 @@ Feature: Login to Torum through different credentials
   Scenario: As a user, I should be redirected to the login screen with the phone number option by default when clicking on the Log in button near 'Already landed?' on the welcome screen
     Given User is on "Welcome Screen"
     When User taps on "Log In" button
-
     Then "Phone Number" textbox should display
 
   @valid_scenario
@@ -78,47 +77,49 @@ Feature: Login to Torum through different credentials
    Then User should be presented with an "inline error" As "This username or email isn't registered yet. Sign up now."
 
  @valid_scenario
- Scenario: As a non-existing user, the 'Continue' button should be changed to the 'SignUp/Get started' button as soon as I enter the email id, which is not stored in the database
-   When User taps on "Log In" button
-   And User taps on "Continue with username/ email"
-   And User enters "invalid email id" in the "email id" text box
-   Then the "continue" button should be changed to the "SignUp/Get started"
-
-  @valid_scenario
-  Scenario: As a non-existing user, I should be able to navigate to the Sign Up screen by hitting the Sign Up button when the "Continue" button switches to the "SignUp/Get Started" button as soon as I enter an email id, which is not saved in the database
-    When User taps on "Log In" button
-    And User taps on "Continue with username/ email"
-    And User enters "invalid email id" in the "email id" text box
-    Given the "continue" button should be changed to the "SignUp/Get started"
-    And user taps on "SignUp/Get started" button
-    Then User should see the sign up window with sign up options
-
-  @valid_scenario
-  Scenario: As a user, I should be able to continue to Email when I add a valid and existing Email ID and Password
+    Scenario: As a non-existing user, the 'Continue' button should be changed to the 'SignUp/Get started' button as soon as I enter the email id, which is not stored in the database
      When User taps on "Log In" button
      And User taps on "Continue with username/ email"
-     And User enters valid "Email id"
-     And User taps on "Continue"
-     And User enters "Password"
-     Then User should be LoggedIn and see "Home Feed" on screen
+     And User enters "invalid email id" in the "email id" text box
+     Then the "continue" button should be changed to the "SignUp/Get started"
+
+  @valid_scenario
+    Scenario: As a non-existing user, I should be able to navigate to the Sign Up screen by hitting the Sign Up button when the "Continue" button switches to the "SignUp/Get Started" button as soon as I enter an email id, which is not saved in the database
+      When User taps on "Log In" button
+      And User taps on "Continue with username/ email"
+      And User enters "invalid email id" in the "email id" text box
+      Given the "continue" button should be changed to the "SignUp/Get started"
+      And user taps on "SignUp/Get started" button
+      Then User should see the sign up window with sign up options
+
+  @valid_scenario
+    Scenario: As a user, I should be able to continue to Email when I add a valid and existing Email ID and OTP
+       When User taps on "Log In" button
+       And User taps on "Continue with username/ email"
+       And User enters valid "Email id"
+       And User taps on "Continue"
+       And User enters valid "OTP"
+       Then User should be LoggedIn and see "Home Feed" on screen
 
 
   @valid_scenario
-  Scenario: As a user, I should be able to continue to login when I add a valid and existing username and Password
-    When User taps on "Log In" button
-    And User taps on "Continue with username/ email"
-    And User enters valid "Username"
-    And User taps on "Continue"
-    And User enters "Password"
-    Then User should be LoggedIn and see "Home Feed" on screen
+    Scenario: As a user, I should be able to continue to login when I add a valid and existing username and Password
+      When User taps on "Log In" button
+      And User taps on "Continue with username/ email"
+      And User enters valid "Username"
+      And User taps on "Continue"
+      And User taps on "Try Another Way"
+      And User taps on "Enter Password"
+      And User enters "Password"
+      Then User should be LoggedIn and see "Home Feed" on screen
 
 
   @valid_scenario
-  Scenario Outline: As a user, I should be able to enter a username that contain only dashes (-), full stops (.), and underscores (_), without any other symbols
-    When User taps on "Log In" button
-    And User taps on "Continue with username/ email"
-    And User enters valid "<Username>"
-    Then  "Continue" button should be enabled "true"
+    Scenario Outline: As a user, I should be able to enter a username that contain only dashes (-), full stops (.), and underscores (_), without any other symbols
+      When User taps on "Log In" button
+      And User taps on "Continue with username/ email"
+      And User enters valid "<Username>"
+      Then  "Continue" button should be enabled "true"
 
     Examples:
       | Username          |
@@ -145,11 +146,11 @@ Feature: Login to Torum through different credentials
 
 
     @invalid_scenario
-    Scenario Outline: As a user, I should be presented with an error message: '' when I enter an invalid username
-      When User taps on "Log In" button
-      And User taps on "Continue with username/ email"
-      And User enters valid "<Username>"
-      Then  User should be presented with an "<Inline Error>"
+      Scenario Outline: As a user, I should be presented with an error message: '' when I enter an invalid username
+        When User taps on "Log In" button
+        And User taps on "Continue with username/ email"
+        And User enters valid "<Username>"
+        Then  User should be presented with an "<Inline Error>"
 
       Examples:
         | Username     | Inline Error                                              |
@@ -166,3 +167,109 @@ Feature: Login to Torum through different credentials
         | –__@…        | This username or email isn't registered yet. Sign up now. |
         | …—__         | This username or email isn't registered yet. Sign up now. |
 
+
+    @valid_scenario
+      Scenario: As a user logging in via phone number, I should be presented with the options of SMS and Password in 'Try another way' if I've created my account via phone number and set my password from settings
+        When User taps on "Log In" button
+        And User taps on "Country code"
+        And User enters "Phone Number"
+        And User taps on "Continue"
+        Given User has password Setup from Settings
+        Then "Try Another Way" Option Should be displayed
+
+    @valid_scenario
+      Scenario: As a user logging in via phone number, I should be presented with the options of SMS and Password in 'Try another way' if I've created my account via phone number and set my password from settings
+        When User taps on "Log In" button
+        And User taps on "Country code"
+        And User enters "Phone Number"
+        And User taps on "Continue"
+        Given User has password Setup from settings
+        And User taps on "Try Another Way"
+        Then two options "Verify Via SMS" and "Enter Password" Should be displayed
+
+    @valid_scenario
+      Scenario: As a user logging in via phone number, I should be presented with the options of SMS and Email ID in 'Try another way' if I've created my account via phone number and added email from settings
+        When User taps on "Log In" button
+        And User taps on "Country code"
+        And User enters "Phone Number"
+        And User taps on "Continue"
+        Given User has Email Setup from settings
+        And User taps on "Try Another Way"
+        Then two options "Verify Via SMS" and "Verify Via Email" Should be displayed
+
+
+    @valid_scenario
+      Scenario: As a user logging in via phone number, I should be presented with the options of SMS and Email ID in 'Try another way' if I've created my account via Email and added phone number from settings
+        When User taps on "Log In" button
+        And User taps on "Country code"
+        And User enters "Phone Number"
+        And User taps on "Continue"
+        Given User has Mobile Setup from settings
+        And User taps on "Try Another Way"
+        Then two options "Verify Via SMS" and "Verify Via Email" Should be displayed
+
+    @valid_scenario
+      Scenario: As a user,if i login with phone number  I should be presented with all three options (SMS, Email ID and Password) in 'Try another way' if I set my profile with all the preferences already
+        When User taps on "Log In" button
+        And User taps on "Country code"
+        And User enters "Phone Number"
+        And User taps on "Continue"
+        Given User has Password and email and Setup from settings
+        And User taps on "Try Another Way"
+        Then Three options "Verify Via SMS" ,"Verify Via Email" and "Enter Password"  Should be displayed
+
+   @valid_scenario
+      Scenario: As a user,if i login with email address I should be presented with all three options (SMS, Email ID and Password) in 'Try another way' if I set my profile with all the preferences already
+        When User taps on "Log In" button
+        And User taps on "Continue with username/ email"
+        And User enters valid "Email id"
+        And User taps on "Continue"
+        Given User has Password and Phone and Setup from settings
+        And User taps on "Try Another Way"
+        Then Three options "Verify Via SMS" ,"Verify Via Email" and "Enter Password"  Should be displayed
+
+
+    @valid_scenario
+      Scenario: As a user loging in via Email Address I should be presented with the 'Try another way' option if I've created my account via Email and set my password from settings
+        When User taps on "Log In" button
+        And User taps on "Continue with username/ email"
+        And User enters valid "Email id"
+        And User taps on "Continue"
+        Given User has password Setup from Settings
+        Then "Try Another Way" Option Should be displayed
+
+   @valid_scenario
+      Scenario: As a user, while logging in via email, the Email verification screen should be prioritised if an email and phone number are available on my account
+         When User taps on "Log In" button
+         And User taps on "Continue with username/ email"
+         And User enters valid "Email id"
+         Given User has Mobile Setup from settings
+         And User taps on "Continue"
+         Then "Email Verification" Screen Should be displayed
+
+   @valid_scenario
+     Scenario: As a user, while logging in via email, the Email verification screen should be prioritised if only email Id is available on my account
+       Given User has not setup mobile and sms
+       When User taps on "Log In" button
+       And User taps on "Continue with username/ email"
+       And User enters valid "Email id"
+       And User taps on "Continue"
+       Then "Email Verification" Screen Should be displayed
+
+   @valid_scenario
+     Scenario: As a user, while logging in via email, the Password screen should be prioritised if an email and password are available on my account
+       Given User has password Setup from Settings
+       When User taps on "Log In" button
+       And User taps on "Continue with username/ email"
+       And User enters valid "Email id"
+       And User taps on "Continue"
+       Then "Password" Screen Should be displayed
+
+   @valid_scenario
+      Scenario: As a user, while logging in Email, the Password screen should be prioritised if password, email and phone number are available on my account
+         Given User has Password and Phone and Setup from settings
+         When User taps on "Log In" button
+         And User taps on "Continue with username/ email"
+         And User enters valid "Email id"
+         And User taps on "Continue"
+         Then "Password" Screen Should be displayed

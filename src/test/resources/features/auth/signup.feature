@@ -275,3 +275,59 @@ Feature: Signup to Torum through different credentials
     When User taps on "Sign Up with Account"
     Then "Set Course" Button Should be disabled
 
+  @valid_scenario
+  Scenario Outline: As a user, I should be presented with the <Set Username> button enabled, when I enter valid alias name
+    When User taps on "Sign Up with Account"
+    And User taps on "Email"
+    And User enter valid "Email Address"
+    And User taps on "Set Course"
+    And User enter valid "OTP"
+    And User enter valid "<Alias Name>"
+    Then "Set Username" button should get enabled "true"
+
+    Examples:
+      | Alias Name        |
+      | user_123          |
+      | alpha.beta        |
+      | john_smith_45     |
+      | code_master_89    |
+      | my.username123    |
+      | rock-n-roll       |
+      | hello.world.42    |
+      | 7wonders_of_world |
+      | 2fast.2furious    |
+      | moon_landing_69   |
+      | underscore_name   |
+      | dot.example       |
+      | username_12345    |
+      | number-1_2_3      |
+      | xyz_abc_def       |
+
+
+
+  @invalid_scenario
+  Scenario Outline: As a user, I should be presented with an inline error message and an X icon with a red highlight when I enter an invalid username.
+    When User taps on "Sign Up with Account"
+    And User taps on "Email"
+    And User enter valid "Email Address"
+    And User taps on "Set Course"
+    And User enter valid "OTP"
+    And User enter valid "<Alias Name>"
+    Then User is presented with inline error "<inlineError>"
+
+    #need to add more invalid username test data
+    Examples:
+      | Alias Name                      | inlineError                                                                                                      |
+      | @r^©Orsh^n9\                    | Your username must consist of 6 or more characters. Only alphabets, numbers and symbols ( -, •, _ ) are allowed. |
+      | abcde                           | Your username must consist of 6 or more characters. Only alphabets, numbers and symbols ( -, •, _ ) are allowed. |
+      | tevgvvvvvvvvccccvcccccccccccccc | Your username must consist of 6 or more characters. Only alphabets, numbers and symbols ( -, •, _ ) are allowed. |
+      | 12345                           | Your username must consist of 6 or more characters. Only alphabets, numbers and symbols ( -, •, _ ) are allowed. |
+      | 1234567891011121314151617181920 | Your username must consist of 6 or more characters. Only alphabets, numbers and symbols ( -, •, _ ) are allowed. |
+      | @!^&*abcdre                     | Your username must consist of 6 or more characters. Only alphabets, numbers and symbols ( -, •, _ ) are allowed. |
+      | trrrrtt65655@#_)((+==           |Your username must consist of 6 or more characters. Only alphabets, numbers and symbols ( -, •, _ ) are allowed.  |
+
+
+
+
+
+
