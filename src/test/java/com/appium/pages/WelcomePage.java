@@ -17,7 +17,7 @@ public class WelcomePage extends BasePage {
         this.clickOnButtonInText(option);
     }
 
-    public void selectLogIn(String option) {
+    public void selectLogin() {
         this.clickOnButtonInText(option);
     }
 

@@ -12,10 +12,10 @@ Feature: Signup to Torum through different credentials
     When User taps on "Sign Up with Account"
     And  User should be presented with the default "Country Code"
     And User taps on "Country Code"
-    And User selects the country code "<Country Code>"
+    And User selects the country code "<Country Name>","<Country Code>"
     And User enters a valid "<Phone number>"
     And Tickmark icon should be displayed
-    Then "Set Course" Button Should get enabled "<isEnabled>" is "true"
+    Then "Set Course" Button Should get enabled isEnabled is "true"
 
     Examples:
     # need to add test data

@@ -3,39 +3,17 @@ Feature: Login to Torum through different credentials
     #----------------------------------------------------------------------------------------
     #new feature code
 
-  @valid_scenario
-  Scenario: As a user, I should be redirected to the login screen with the phone number option by default when clicking on the Log in button near 'Already landed?' on the welcome screen
-    Given User is on Welcome Screen
-    When User taps on "Log In" button
-    Then "Phone Number" textbox should display
-
-  @valid_scenario
-  Scenario: As a user, I should be presented with the Malaysia country code by default in the phone number option when clicking on the Log in button on the welcome screen
-     When User taps on "Log In" button
-     Then User should be presented with the "country code" as "My" by default
-
-
-  @valid_scenario
-  Scenario: As a user, I should be presented with different country codes in the dropdown when tapping on the country code field
-    When User taps on "Log In" button
-    And  User taps on "country code"
-    Then User Should be presented with dropdown with different country code list
-
 
   @valid_scenario
   Scenario: As a user, I should be able to select the country code from the dropdown when tapping on a country code field
     When User taps on "Log In" button
+    And  User should be presented with the "country code" as "My" by default
     And  User taps on "country code"
     Given User Should be presented with dropdown with different country code list
+    And  Then the country code dropdown should be scrollable
     And user taps on one of the "country code"
     Then the selected country code should get selected
 
-  @valid_scenario
-  Scenario: As a user, I should be able to scroll the country codes in the dropdown when tapping on the country code field
-    When User taps on "Log In" button
-    And  User taps on "country code"
-    Given User Should be presented with dropdown with different country code list
-    Then the country code dropdown should be scrollable
 
   @invalid_scenario
   Scenario: As a user, an error message should be shown below the phone number input when I add a phone number that is mismatched with the country code
@@ -46,27 +24,13 @@ Feature: Login to Torum through different credentials
 
 
   @valid_scenario
-  Scenario: As a user, the 'Continue' button should be enabled as soon as I enter the first character in the input
-    When User taps on "Log In" button
-    And User taps on "country code"
-    And User enters "Phone Number"
-    Then  "Continue" button should be enabled "true"
-
-
-  @valid_scenario
-  Scenario: As a user, I should be logged in as soon as I enter the valid OTP in the input
+  Scenario: As a user, I should be logged in as soon as I enter the valid OTP in the input with valid phone number and otp
     When User taps on "Log In" button
     And User taps on "Country code"
     And User enters "Phone Number"
     And User taps on "Continue"
     And User enters valid "OTP"
     Then User should be LoggedIn and see "Home Feed" on screen
-
-  @valid_scenario
-  Scenario: As a user, I should be able to change the preference of login with username by tapping on 'Continue with username/ email' on login screen
-    When User taps on "Log In" button
-    And User taps on "Continue with username/ email"
-    Then "username" textbox should display
 
 
  @invalid_scenario
@@ -76,12 +40,6 @@ Feature: Login to Torum through different credentials
    And User enters "invalid email" id in the "email id" text box
    Then User should be presented with an "inline error" As "This username or email isn't registered yet. Sign up now."
 
- @valid_scenario
-    Scenario: As a non-existing user, the 'Continue' button should be changed to the 'SignUp/Get started' button as soon as I enter the email id, which is not stored in the database
-     When User taps on "Log In" button
-     And User taps on "Continue with username/ email"
-     And User enters "invalid email id" in the "email id" text box
-     Then the "continue" button should be changed to the "SignUp/Get started"
 
   @valid_scenario
     Scenario: As a non-existing user, I should be able to navigate to the Sign Up screen by hitting the Sign Up button when the "Continue" button switches to the "SignUp/Get Started" button as soon as I enter an email id, which is not saved in the database

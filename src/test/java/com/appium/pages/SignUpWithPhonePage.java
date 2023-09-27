@@ -1,6 +1,8 @@
 package com.appium.pages;
 
-public class LoginPage extends BasePage {
+import org.openqa.selenium.By;
+
+public class SignUpWithPhonePage extends BasePage {
 
     public void selectCountryCode(String country, String countryCode) {
         this.clickOnButtonInText("+1");
@@ -12,13 +14,9 @@ public class LoginPage extends BasePage {
         this.enter(fieldName, phoneNumber);
     }
 
-    public void selectContinueWithUsernameOrEmail(String option) {
+    public void selectEmail(String option) {
         this.clickOnButtonInText(option);
 
-    }
-
-    public void enterEmail(String fieldName, String email) {
-        this.enter(fieldName,email);
     }
 
     public boolean isDefaultCountryCodeMy(String locator, String value, int timeoutInSeconds){
@@ -31,6 +29,20 @@ public class LoginPage extends BasePage {
     public void  selectCountryCodeOption(String option){
         this.clickOnButtonInText(option);
 
+    }
+
+    public Boolean isTicMarkPresent(String locator, String value, int timeoutInSeconds){
+        return this.isDisplayed(locator,value,timeoutInSeconds);
+    }
+
+    public Boolean isSetCourseEnabled(String locator){
+           return this.isButtonEnabled(locator);
+    }
+
+    public String inlineErrorMessage(){
+        By option ;
+        String text;
+      return this.getText(option,text);
     }
 
 
