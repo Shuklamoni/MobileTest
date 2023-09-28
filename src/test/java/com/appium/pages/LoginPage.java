@@ -32,6 +32,7 @@ public class LoginPage extends BasePage {
         this.clickOnButtonInText(option);
 
     }
+    
 
 
 }

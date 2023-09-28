@@ -1,16 +1,10 @@
 package com.appium.stepDefinitions.auth;
 
-import com.appium.pages.AuthPage;
-import com.appium.pages.LoginPage;
-import com.appium.pages.SignUpWithPhonePage;
-import com.appium.pages.WelcomePage;
+import com.appium.pages.*;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.apache.commons.lang3.RandomStringUtils;
-import org.openqa.selenium.Keys;
 
-import static com.appium.utils.RandomDataUtils.*;
 import static org.testng.AssertJUnit.assertEquals;
 import static org.testng.AssertJUnit.assertTrue;
 
@@ -18,6 +12,12 @@ public class SignupStep {
     AuthPage authPage = new AuthPage();
     WelcomePage welcomePage = new WelcomePage();
     SignUpWithPhonePage signUpWithPhone = new SignUpWithPhonePage();
+    OtpVerificationPage otpVerPage = new OtpVerificationPage();
+
+    AliasPage aliasPage = new AliasPage();
+
+
+
     String password;
 
     /*
@@ -117,13 +117,49 @@ public class SignupStep {
     }
 
     @Then("{string} Button Should get enabled  is {string}")
-    public void buttonShouldGetEnabledIs(String buttonName) {
+    public void buttonShouldGetEnabled(String buttonName) {
         assertTrue(signUpWithPhone.isSetCourseEnabled(buttonName));
     }
 
     @Then("User is presented with inline error {string}")
     public void userIsPresentedWithInlineError(String text) {
         assertEquals(text,signUpWithPhone.inlineErrorMessage());
+    }
+
+
+    @And("User enters valid {string}")
+    public void userEntersValidOTP(String otp) {
+        Response userData = otpVerPage.fetchOtp();
+        otpVerPage.enterOtp(otp);
+    }
+
+    @And("User enters a valid {String}")
+    public  void enterValidAliasName(String aliasName){
+        aliasPage.enterAlias(aliasName);
+    }
+
+
+    @And("{string} button should get isEnabled is {string}")
+    public void setUsernamebuttonShouldGetIsEnabledIs(String buttonName, String isEnabled) {
+        assertTrue(aliasPage.isSetUsernameEnabled(buttonName));
+    }
+
+    @And("User taps on {string}")
+    public void tapsSetUsernamebutton(String buttonName){
+        aliasPage.tapOnSetUsername(buttonName);
+    }
+    @Then("User should get signedUp and {String} screen should be visible")
+    public void isHomeScreenVisible(){
+        assertTrue(welcomePage.isWelcomeScreen());
+    }
+
+    @And("User enters a valid {string}")
+    public void userEntersAValidEmailAddress(String fieldName, String emailAddress) {
+        signUpWithPhone.enterMobileNumber("Email Address",emailAddress);
+    }
+    @And("User taps on {String}")
+    public void userTapsOnEmail(String buttonName){
+        signUpWithPhone.selectEmail(buttonName);
     }
 
 

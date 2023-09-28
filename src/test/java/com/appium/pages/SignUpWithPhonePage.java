@@ -23,6 +23,7 @@ public class SignUpWithPhonePage extends BasePage {
         Boolean myisDefaultCountry = false;
         if (this.isDisplayed(locator,value,timeoutInSeconds))
             myisDefaultCountry = true;
+
         return myisDefaultCountry;
     }
 
@@ -31,7 +32,8 @@ public class SignUpWithPhonePage extends BasePage {
 
     }
 
-    public Boolean isTicMarkPresent(String locator, String value, int timeoutInSeconds){
+    public Boolean isTicMarkPresent(){
+        String locator = null; String value = null; int timeoutInSeconds = 0;
         return this.isDisplayed(locator,value,timeoutInSeconds);
     }
 

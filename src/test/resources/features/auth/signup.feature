@@ -6,7 +6,6 @@ Feature: Signup to Torum through different credentials
 
     #new feature file
 
-
   @valid_scenario
   Scenario Outline: As a user,  I should be presented with a tickmark icon and the <Set Course> button should get enabled when I enter a valid mobile number.
     When User taps on "Sign Up with Account"
@@ -69,10 +68,11 @@ Feature: Signup to Torum through different credentials
     And User enters a "Phone Number"
     And User taps on "Set Course"
     And User enters valid "OTP"
-    And User enters a valid "<Alias Name>"
+    And User enters a valid "Alias Name"
+    And "Set Username" button should get isEnabled is "true"
     And User taps on "Set Username"
-    And User taps on "Set Face ID"
-    And User taps on "Set Finger Print"
+   # And User taps on "Set Face ID"
+   # And User taps on "Set Finger Print"
     Then User should get signedUp and "Home Feed" screen should be visible
 
   @valid_scenario

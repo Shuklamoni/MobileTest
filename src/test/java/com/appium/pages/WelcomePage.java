@@ -1,5 +1,7 @@
 package com.appium.pages;
 
+import javax.swing.*;
+
 public class WelcomePage extends BasePage {
 
     public void selectSignUpWithAccount(String option) {
@@ -21,8 +23,9 @@ public class WelcomePage extends BasePage {
         this.clickOnButtonInText(option);
     }
 
-    public boolean isWelcomeScreen(MobileElment elementName,int time){
-
+    public boolean isWelcomeScreen(){
+        String buttonName = null;
+        return  this.iselementContainsTextDisplayed(buttonName);
 
     }
 
