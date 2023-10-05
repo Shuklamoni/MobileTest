@@ -1,295 +1,179 @@
 @ui @auth @signup
 Feature: Signup to Torum through different credentials
 
-    #---------------------------------------------------------------------------------------------------------------------------------------------------
-    #---------------------------------------------------------------------------------------------------------------------------------------------------
-
-    #new feature file
-
   @valid_scenario
-  Scenario Outline: As a user,  I should be presented with a tickmark icon and the <Set Course> button should get enabled when I enter a valid mobile number.
-    When User taps on "Sign Up with Account"
-    And  User should be presented with the default "Country Code"
-    And User taps on "Country Code"
-    And User selects the country code "<Country Name>","<Country Code>"
-    And User enters a valid "<Phone number>"
-    And Tickmark icon should be displayed
-    Then "Set Course" Button Should get enabled isEnabled is "true"
-
+  Scenario Outline: As a user, I must be able to signup to Torum successfully via valid password format and length of <password_length> characters
+    When User click on "Build your crypto profile"
+    And User enter "Username" with <username_length> characters
+    And User enter valid "Email"
+    And User select phone number country "India" with country code "+91"
+    And User enter valid "Phone"
+    And User click on "Next"
+    And User enter "Password" with <password_length> characters
+    And User enter "Confirm Password" same as password
+    And User click on "Next"
+    Then User should be signedUp and see "Pick a profile picture" on screen
     Examples:
-    # need to add test data
-      | Country name   | Country Code | Phone number |
-      | United States  | +1           |              |
-      | Canada         | +1           |              |
-      | United Kingdom | +44          |              |
-      | Australia      | +61          |              |
-      | India          | +91          |              |
-      | Germany        | +49          |              |
-      | France         | +33          |              |
-      | China          | +86          |              |
-      | Japan          | +81          |              |
-      | South Africa   | +27          |              |
-      | Singapore      | +65          |              |
-      | New Zealand    | +64          |              |
-      | Israel         | +972         |              |
-      | Turkey         | +90          |              |
-      | Thailand       | +66          |              |
+      | username_length | password_length |
+      | 8               | 8               |
+      | 15              | 8               |
+      | 30              | 8               |
+      | 8               | 8               |
+      | 8               | 15              |
+      | 8               | 50              |
 
 
-  @invalid_scenario
-  Scenario Outline: As a user,  I should be presented with an inline error message and 'X' icon with a red highlight, when I enter an invalid phone number.
-    When User taps on "Sign Up with Account"
-    And User taps on "Country code"
-    And User selects the country code "<Country Code>"
-    And User enters invalid "Phone Number"
-    And Cross icon Should be displayed
-    Then User is presented with inline error "<inlineError>"
+  @valid_scenario @referral
+  Scenario: As a user, I must be able to signup to Torum successfully via valid referral user
+    When User click on "Build your crypto profile"
+    And User enter "Username" with 8 characters
+    And User enter valid "Email"
+    And User select phone number country "India" with country code "+91"
+    And User enter valid "Phone"
+    And User enter "Referral username" with value "Nelthan"
+    And User click on "Next"
+    And User enter "Password" with 8 characters
+    And User enter "Confirm Password" same as password
+    And User click on "Next"
+    Then User should be signedUp and see "Pick a profile picture" on screen
 
-    #need to add test data
+  @invalid_scenario @referral
+  Scenario: As a user, I must not be able to signup to Torum successfully via invalid referral user
+    When User click on "Build your crypto profile"
+    And User enter "Username" with 8 characters
+    And User enter valid "Email"
+    And User select phone number country "India" with country code "+91"
+    And User enter valid "Phone"
+    And User enter "Referral username" with value "Rubytest02"
+    Then User is presented with field error "Invalid referral code or account is not verified."
+
+  @invalid_scenario @emptyCredential
+  Scenario Outline: As a user, I must not be able to SignUp with any empty "<fieldName>"
+    When User click on "Build your crypto profile"
+    And User enter empty "<fieldName>"
+    Then User is presented with field error "<fieldError>"
     Examples:
+      | fieldName | fieldError           |
+      | Username  | Username (required!) |
+      | Email     | Email (required!)    |
+      | Phone     | Phone (required!)    |
 
-      | Country name   | Country Code | Phone Number |
-      | United States  | +1           |              |
-      | Canada         | +1           |              |
-      | United Kingdom | +44          |              |
-      | Australia      | +61          |              |
-      | India          | +91          |              |
-      | Germany        | +49          |              |
-      | France         | +33          |              |
-      | China          | +86          |              |
-      | Japan          | +81          |              |
+  @invalid_scenario @username
+  Scenario: As a user, I must not be able to SignUp with invalid length of username
+    When User click on "Build your crypto profile"
+    And User enter "Username" with 5 characters
+    Then User is presented with field error "Username must be at least 6 characters"
 
-
-  @valid_scenario
-  Scenario: As a user, I must be able to signup to Torum successfully using valid mobile number.
-    When User taps on "Sign Up with Account"
-    And User taps on "Country code"
-    And User selects the country code "<Country Code>"
-    And User enters a "Phone Number"
-    And User taps on "Set Course"
-    And User enters valid "OTP"
-    And User enters a valid "Alias Name"
-    And "Set Username" button should get isEnabled is "true"
-    And User taps on "Set Username"
-   # And User taps on "Set Face ID"
-   # And User taps on "Set Finger Print"
-    Then User should get signedUp and "Home Feed" screen should be visible
-
-  @valid_scenario
-  Scenario: As a user, I must be able to signup to Torum successfully using valid email address.
-    When User taps on "Sign Up with Account"
-    And User taps on "Email"
-    And User enters a valid "Email Address"
-    And User taps on "Set Course"
-    And User enters valid "OTP"
-    And User enters a valid "<Alias Name>"
-    And User taps on "Set Username"
-    And User taps on "Set Face ID"
-    And User taps on "Set Finger Print"
-    Then User should get signedUp and "Home Feed" screen should be visible
+#    unable to run this case because of only text locator is available
+#  @invalid_scenario @username
+#  Scenario: As a user, I must not be able to SignUp with invalid length of username
+#    When User click on "Build your crypto profile"
+#    And User enter "Username" with 31 characters
+#    Then User is presented with field error "Username must be at least 6 characters"
+#    Then User actually only entered 30 characters in "Username"
 
 
-  @valid_scenario
-  Scenario Outline: As a user,  I should be presented with a <Set Course> button and tickmark icon, when I enter a valid Email Id format.
-    When User taps on "Sign Up with Account"
-    And User taps on "Email"
-    And User enters a valid "Email Address"
-    And Tickmark icon should be displayed
-    Then  "Set Course" Button Should get enabled "<isEnabled>" is "true"
-
+  @invalid_scenario @username
+  Scenario Outline: As a user, I must not be able to SignUp with invalid details in username
+    When User click on "Build your crypto profile"
+    And User enter invalid "Username" with value "<username>"
+    Then User is presented with field error "<fieldError>"
     Examples:
-      | Email Address              |
-      | john.doe@example.com       |
-      | jane.smith1234@gmail.com   |
-      | contact_us@company.co.uk   |
-      | user-name@example-mail.org |
-      | gmail.com                  |
-      | yahoo.com                  |
-      | outlook.com                |
-      | icloud.com                 |
-      | yahoo.co.uk                |
-      | microsoft.com              |
-      | apple.com                  |
-      | amazon.com                 |
-      | google.com                 |
-      | harvard.edu                |
-      | whitehouse.gov             |
-      | redcross.org               |
-      | johnsmith.com              |
-      | verizon.net                |
+      | username | fieldError                                                                                                                                     |
+      | 1test01  | The username should be alphanumeric, must start with an alphabet, can only contain lowercase alphabets, and should be 6 to 30 characters long. |
+      | !test01  | Username must contain at least 6 alpha-numeric characters in a valid format!                                                                   |
+      | !@#$%^&* | Username must contain at least 6 alpha-numeric characters in a valid format!                                                                   |
+      | user001  | Username already in use.                                                                                                                       |
+      | nelthan  | Username already in use.                                                                                                                       |
+      | rubyyan  | Username already in use.                                                                                                                       |
 
-
-  @invalid_scenario
-  Scenario Outline: As a user, I should be presented with an inline error, when I enter invalid Email Id.
-    When User taps on "Sign Up with Account"
-    And User taps on "Email"
-    And User enters a valid "Email Address"
-    And Cross icon should be displayed
-    Then User is presented with inline error "<Inline Error>"
-
-  #need to add invalid email id's and change inline error messages
+  @invalid_scenario @email
+  Scenario Outline: As a user, I must not be able to SignUp with invalid details in Email
+    When User click on "Build your crypto profile"
+    And User enter invalid "Email" with value "<email>"
+    Then User is presented with field error "<fieldError>"
     Examples:
-      | Email Address       | Inline Error                          |
-      | john.Doeexample.com | Invalid Email format,please try again |
-      | @example.com        | Invalid Email format,please try again |
-      | John.Doe@           | Invalid Email format,please try again |
-      | john.Doe@exa        | Invalid Email format,please try again |
+      | email                  | fieldError             |
+      | karthik.sake           | Invalid email address! |
+      | karthik.sake@gmail.com | Email already in use.  |
+      | ruby@torum.com         | Email already in use.  |
 
-  @invalid_scenario
-  Scenario: As a user, I should be presented an Inline Error Message , When I enter an unmatched phone number and OTP.
-    When User taps on "Sign Up with Account"
-    And User taps on "Country code"
-    And User selects the country code "<Country Code>"
-    And User enters a "Phone Number"
-    And User taps on "Set Course"
-    And User enters invalid "OTP"
-    Then User should be presented with an "inline error"
-
-
-  @valid_scenario
-  Scenario: As a user,I Should be presented with list of country codes and I should be able to scroll the country codes in the dropdown and search for a country using the initial character of any country's name.
-    When User taps on "Sign Up with Account"
-    And User taps on "Country code"
-    And Country code dropdown should be displayed
-    And The country code dropdown should be scrollable
-    And User enters initial character of the "Country Name" in the "Search Box"
-    Then The "Country Name" with "Country Code" should be displayed in the search result
-
-
-  @valid_scenario
-  Scenario Outline: As a user, I should be presented with the <Set Username> button enabled, when I enter valid alias name.
-    When User taps on "Sign Up with Account"
-    And User taps on "Email"
-    And User enters a valid "Email Address"
-    And User taps on "Set Course"
-    And User enters valid "OTP"
-    And User enters a valid "<Alias Name>"
-    And Tickmark icon should be displayed
-    Then "Set Username" button should get "isEnabled" is "true"
-
+  @invalid_scenario @mobile
+  Scenario Outline: As a user, I must not be able to SignUp with invalid details in Phone number
+    When User click on "Build your crypto profile"
+    And User select phone number country "India" with country code "+91"
+    And User enter invalid "Phone" with value "<phoneNumber>"
+    Then User is presented with field error "<fieldError>"
     Examples:
-      | Alias Name        |
-      | user_123          |
-      | alpha.beta        |
-      | john_smith_45     |
-      | code_master_89    |
-      | my.username123    |
-      | rock-n-roll       |
-      | hello.world.42    |
-      | 7wonders_of_world |
-      | 2fast.2furious    |
-      | moon_landing_69   |
-      | underscore_name   |
-      | dot.example       |
-      | username_12345    |
-      | number-1_2_3      |
-      | xyz_abc_def       |
+      | phoneNumber | fieldError                           |
+      | 9705502623  | This phone number is already in use. |
+      | 701325537   | This phone number is invalid.        |
+      | 542620590   | This phone number is invalid.        |
 
 
-  @invalid_scenario
-  Scenario Outline: As a user, I should be presented with an inline error message and an X icon with a red highlight when I enter an invalid username.
-    When User taps on "Sign Up with Account"
-    And User taps on "Email"
-    And User enters a valid "Email Address"
-    And User taps on "Set Course"
-    And User enters valid "OTP"
-    And User enters a valid "<Alias Name>"
-    And Cross icon should be displayed
-    Then User is presented with the inline error "<inlineError>"
-    # error message "Your username must consist of 6 or more characters. Only alphabets, numbers and symbols ( -, •, _ ) are allowed."
-    #need to add more invalid username test data
+  @invalid_scenario @password
+  Scenario Outline: As a user, I must not be able to SignUp with invalid details in password
+    When User click on "Build your crypto profile"
+    And User enter "Username" with 8 characters
+    And User enter valid "Email"
+    And User select phone number country "India" with country code "+91"
+    And User enter valid "Phone"
+    And User click on "Next"
+    And User enter invalid "Password" with value "<password>"
+    Then User is presented with field error "<fieldError>"
     Examples:
-      | Alias Name                      |
-      | @r^©Orsh^n9\                    |
-      | abcde                           |
-      | tevgvvvvvvvvccccvcccccccccccccc |
-      | 12345                           |
-      | 1234567891011121314151617181920 |
-      | @!^&*abcdre                     |
-      | trrrrtt65655@#_)((+==           |
+      | password  | fieldError                                                                                                                                                    |
+      | aBCdEfge  | Password should be 8 to 50 characters long, with at least one uppercase letter, one lowercase letter, one number and one special character! (!,@,#,$,%,^,&,*) |
+      | 12345678  | Password should be 8 to 50 characters long, with at least one uppercase letter, one lowercase letter, one number and one special character! (!,@,#,$,%,^,&,*) |
+      | !@#$%^&*  | Password should be 8 to 50 characters long, with at least one uppercase letter, one lowercase letter, one number and one special character! (!,@,#,$,%,^,&,*) |
+      | aa23am!fa | Password should be 8 to 50 characters long, with at least one uppercase letter, one lowercase letter, one number and one special character! (!,@,#,$,%,^,&,*) |
+      | SD23FSD!  | Password should be 8 to 50 characters long, with at least one uppercase letter, one lowercase letter, one number and one special character! (!,@,#,$,%,^,&,*) |
+      | Sd23FSDdf | Password should be 8 to 50 characters long, with at least one uppercase letter, one lowercase letter, one number and one special character! (!,@,#,$,%,^,&,*) |
 
+  @invalid_scenario @password
+  Scenario: As a user, I must not be able to SignUp with invalid password length
+    When User click on "Build your crypto profile"
+    And User enter "Username" with 8 characters
+    And User enter valid "Email"
+    And User select phone number country "India" with country code "+91"
+    And User enter valid "Phone"
+    And User click on "Next"
+    And User enter "Password" with 7 characters
+    Then User is presented with field error "Password should be 8 to 50 characters long, with at least one uppercase letter, one lowercase letter, one number and one special character! (!,@,#,$,%,^,&,*)"
 
-  #@valid_scenario
-  #Scenario: As a user, I must be able to signup to Torum successfully using Metamask Wallet
-    #When User taps on "Sign Up with Account"
-    #And User taps on "Metamask"
-    #Given "Metamask" app is opened
-    #And User taps on "Connect"
-    #And User taps on "Sign"
-    #And User enter valid "Alias Name"
-    #And User taps on "Set Username"
-    #And User taps on "Set Face ID"
-    #And User taps on "Set Finger Print"
-    #Then User should be signedUp and see "Home Feed" on screen
+#    unable to run this case because of only text locator is available
+#  @invalid_scenario @ @password
+#  Scenario: As a user,  I must not be able to SignUp with invalid password length
+#    When User click on "Build your crypto profile"
+#    And User enter "Username" with 8 characters
+#    And User enter valid "Email"
+#    And User select phone number country "India" with country code "+91"
+#    And User enter valid "Phone"
+#    And User click on "Next"
+#    And User enter "Password" with 51 characters
+#    Then User actually only entered 50 characters in "Password"
 
-  #@valid_scenario
-  #Scenario: As a user, I must be able to signup to Torum successfully using Coinbase Wallet
-    #When User taps on "Continue With Wallet"
-    #And User taps on "coinbase"
-    #Given "Coinbase" app is opened
-    #And User taps on "Connect"
-    #And User taps on "Sign"
-    #And User enter valid "Alias Name"
-    #And User taps on "Set Username"
-    #And User taps on "Set Face ID"
-    #And User taps on "Set Finger Print"
-    #Then User should be signedUp and see "Home Feed" on screen
+  @invalid_scenario @password
+  Scenario: As a user, I must not be able to SignUp with mismatching confirm password
+    When User click on "Build your crypto profile"
+    And User enter "Username" with 8 characters
+    And User enter valid "Email"
+    And User select phone number country "India" with country code "+91"
+    And User enter valid "Phone"
+    And User click on "Next"
+    And User enter "Password" with 12 characters
+    And User enter "Confirm Password" different from password
+    And User click on "Next"
+    Then User is presented with field error "Passwords do not match."
 
-  #@valid_scenario
-  #Scenario: As a user, I must be able to signup to Torum successfully using Trust Wallet
-    #When User taps on "Continue With Wallet"
-    #And User taps on "Trust"
-    #Given "Trust" app is opened
-    #And User taps on "Connect"
-    #And User taps on "Sign"
-    #And User enter valid "Alias Name"
-    #And User taps on "Set Username"
-    #And User taps on "Set Face ID"
-    #And User taps on "Set Finger Print"
-    #Then User should be signedUp and see "Home Feed" on screen
-
-  #@valid_scenario
-  #Scenario: As a user, I must be able to signup to Torum successfully using Zerion Wallet
-    #When User taps on "Continue With Wallet"
-    #And User taps on "Zerion"
-    #Given "Zerion" app is opened
-    #And User taps on "Connect"
-    #And User taps on "Sign"
-    #And User enter valid "Alias Name"
-    #And User taps on "Set Username"
-    #And User taps on "Set Face ID"
-    #And User taps on "Set Finger Print"
-    #Then User should be signedUp and see "Home Feed" on screen
-
-  #@valid_scenario
-  #Scenario: As a user, I must be able to signup to Torum successfully using Apple
-    #When User taps on "Continue With Apple"
-    #And User taps on "Continue"
-    #Given User is back in "Torum App"
-    #And User enter valid "Alias Name"
-    #And User taps on "Set Username"
-    #And User taps on "Set Face ID"
-    #And User taps on "Set Finger Print"
-    #Then User should be signedUp and see "Home Feed" on screen
-
-  #@valid_scenario
-  #Scenario: As a user, I must be able to signup to Torum successfully using Google
-    #When User taps on "Continue With Google"
-    #And User taps on "Set Username"
-    #And User enter valid "Email Address"
-    #And User taps on "Next"
-    #And User enter valid "Password"
-    #And User taps on "Next"
-    #Given User is back in "Torum App"
-    #And User enter valid "Alias Name"
-    #And User taps on "Set Username"
-    #And User taps on "Set Face ID"
-    #And User taps on "Set Finger Print"
-    #Then User should be signedUp and see "Home Feed" on screen
-
-
-
-
-
-
-
+  @invalid_scenario @emptyCredential1
+  Scenario: As a user, I must not be able to SignUp with any empty "Password"
+    When User click on "Build your crypto profile"
+    And User enter "Username" with 8 characters
+    And User enter valid "Email"
+    And User select phone number country "India" with country code "+91"
+    And User enter valid "Phone"
+    And User click on "Next"
+    And User enter empty "Password"
+    And User enter "Confirm Password" different from password
+    Then User should see the button "Next" is enabled "false"

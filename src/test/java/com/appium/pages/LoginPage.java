@@ -21,18 +21,7 @@ public class LoginPage extends BasePage {
         this.enter(fieldName,email);
     }
 
-    public boolean isDefaultCountryCodeMy(String locator, String value, int timeoutInSeconds){
-        Boolean myisDefaultCountry = false;
-        if (this.isDisplayed(locator,value,timeoutInSeconds))
-            myisDefaultCountry = true;
-        return myisDefaultCountry;
-    }
 
-    public void  selectCountryCodeOption(String option){
-        this.clickOnButtonInText(option);
-
-    }
-    
 
 
 }
