@@ -1,8 +1,10 @@
 package helpers;
 import static io.restassured.RestAssured.*;
-import restassured.response.Response;
+import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.when;
 
-
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 public class ApiResponseUtils {
     public ApiResponseUtils() {
         // Set the base URI for your API endpoints

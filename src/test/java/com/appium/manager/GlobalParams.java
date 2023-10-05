@@ -118,9 +118,9 @@ public class GlobalParams {
 		 * Maven command.
 		 */
 		params.setPlatformName(System.getProperty("platformName", "Android"));
-		params.setUDID(System.getProperty("udid", "emulator-5554"));
-		// params.setDeviceName(System.getProperty("deviceName", "OnePlus"));
-		params.setDeviceName(System.getProperty("deviceName", "Pixel_3"));
+		//params.setUDID(System.getProperty("udid", "emulator-5554"));
+		//params.setDeviceName(System.getProperty("deviceName", "OnePlus"));
+		params.setDeviceName(System.getProperty("deviceName", "moto g82 5G"));
 		switch (params.getPlatformName()) {
 		case "Android":
 			params.setSystemPort(System.getProperty("systemPort", "10000"));
