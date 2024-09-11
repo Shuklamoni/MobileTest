@@ -8,7 +8,8 @@ public class LoginPage extends BasePage {
         this.clickOnButtonInText(countryCode);
     }
 
-    public void enterMobileNumber(String fieldName, String phoneNumber) {
+    public void enterMobileNumber(String fieldName, String phoneNumber)
+    {
         this.enter(fieldName, phoneNumber);
     }
 
@@ -17,7 +18,8 @@ public class LoginPage extends BasePage {
 
     }
 
-    public void enterEmail(String fieldName, String email) {
+    public void enterEmail(String fieldName, String email)
+    {
         this.enter(fieldName,email);
     }
 
